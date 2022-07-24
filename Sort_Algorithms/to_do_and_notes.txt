@@ -1,0 +1,8 @@
+Sorting Algorithms Java TO DO:
+
+Selection Sort : done
+Insertion Sort : done
+Bubble Sort : 
+Merge Sort : done
+Heap Sort :
+
