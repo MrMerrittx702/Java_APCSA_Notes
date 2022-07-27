@@ -1,10 +1,15 @@
+//Java Math Class
+
 /*
 DISCLAIMER: 
 This file is meant to highlight the code and what it is doing. 
 You should not choose class, object, method, or variable names the way this file does. 
 */
 
-//Java Math Class
+/**
+Notes:
+
+*/
 
 class MathClass {
   public static void main(String[] args){
@@ -43,7 +48,15 @@ class MathClass {
     //why are these two different formulas necessary?
     
     //check out RandomRange.java
-
-    
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

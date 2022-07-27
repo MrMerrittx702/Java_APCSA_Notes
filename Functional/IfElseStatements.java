@@ -1,10 +1,33 @@
+//Java If...Else statements
+
 /*
 DISCLAIMER: 
 This file is meant to highlight the code and what it is doing. 
 You should not choose class, object, method, or variable names the way this file does. 
 */
 
-//Java If...Else statements
+/**
+Notes:
+use the if keyword to begin and if statement
+  syntax:
+  if(condition){
+    <code to be executed>
+
+  } else if (condition){
+
+    <code to be executed>
+
+  } else {
+
+    <code to be executed>
+  }
+
+  else if & else are not required but can be used.
+
+  curly braces {} help us keep track of the code in our statements in some cases they are required
+  in some they are not. It is good practice to always use curly braces whether they are required
+  or not. It makes your code easier to read.
+*/
 
 class IfElseStatements {
   public static void main(String[] args){
@@ -12,35 +35,10 @@ class IfElseStatements {
     //Don't worry we will come back to this later.
 
     //Java If...Else statements--------------------------------------------------------------------------------------------------------------
-  
-    /*
-    use the if keyword to begin and if statement
-    syntax:
-    if(condition){
-      <code to be executed>
-
-    } else if (condition){
-
-      <code to be executed>
-
-    } else {
-
-      <code to be executed>
-    }
-
-    else if & else are not required but can be used.
-    */
 
     int x = 5;
     int y = 1;
 
-    /*
-    curly braces help us keep track of the code in our statements in some cases they are required
-    in some they are not. It is good practice to always use curly braces whether they are required
-    or not. It makes your code easier to read.
-    */ 
-
-    
     if (x < y){
       //if statements execute a block of code if a condition is true
       System.out.println("The if condition is false so this will not print.");
@@ -97,3 +95,13 @@ class IfElseStatements {
     System.out.println(result);
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

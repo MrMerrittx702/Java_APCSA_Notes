@@ -1,40 +1,46 @@
+//Java Variables 
+
 /*
 DISCLAIMER: 
 This file is meant to highlight the code and what it is doing. 
 You should not choose class, object, method, or variable names the way this file does. 
 */
 
-//Java Variables
+/**
+Notes:
+  Variables: are the identifiers given to locations in memory that are used to store data. 
+    in other words, names for values that can change.
 
-
-class Variables {
-  public static void main(String[] args){
-
-//Follow these naming rules for creating identifiers for classes, objects, methods, and variables.
-    /*General Naming rules:
+  Follow these naming rules for creating identifiers for variables, methods, and objects.
+    General Naming rules:
       > may contain letters, digits, underscores and dollar signs
       > must begin with a letter
       > start with lowercase and no whitespace (camelcase)
       > can begin with $ and _ 
       > names are case sensitive 
       > reserved words cannot be used as names. 
-    */
+*/
 
+class Variables {
+  public static void main(String[] args){
+  //ignore this above for now, but make sure it is in every program you write or they will not work.
+  //Don't worry we will come back to this later.
 
 
     //syntax for declaring variable --> type identifier = value ;
     int variable; //This is declaring the variable
     variable = 0; //This is initializing the variable
+
     //you can do both at the same time;
     int newVariable = 0; 
 
-    //Strings
+    //Strings: for words and sentences
     String someText = "Your text here.";
 
-    // Integers
+    // Integers: for whole numbers
     int someNumber = 5;
 
-    // Boolean
+    // Booleans: for true and false values
     boolean someBool = true;
 
 
@@ -62,10 +68,10 @@ class Variables {
     //Declare multiple variables of the same type with a comma seperated list:
     int a = 1, b =2, c = 3;
     
-    //or one value to multipe variables
+    //or one value to multiple variables
     a = b = c = 100;
 
-    //concatenate text and a variables with the + operator
+    //concatenate text and variables with the + operator
     String concatMe = "To concatenate means ";
     String concatenated = concatMe + "to link together in a chain or series.";
     System.out.println(concatenated);
@@ -76,5 +82,27 @@ class Variables {
     String concat3 = concat1 + concat2;
     System.out.println(concat3);
 
+    //the concat() method can be used, but only for strings
+    String string1 = "concat";
+    String string2 = "enated";
+    concatenated =  string1.concat(string2);
+    System.out.println(concateneated);
   }
 }
+
+/*
+Common Errors:
+  Forgetting a semicolon ;
+  Forgetting quotes ""
+  Forgetting the type when declaring the variable
+  Redeclaring the variable when changing its value
+
+
+*/
+
+/*
+Practice:
+Create a program that prints out your full name, age and answers the true/false question below:
+  Booleans come from a form of math called boolean algebra. (true/false)?
+
+*/

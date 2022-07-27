@@ -1,23 +1,42 @@
+//Java Methods
+
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+
+*/
+
+
+/**
+Notes:
+
+*/
 
 public class Methods{
-//Java Methods are blocks of code that are only run when called (like a function)
+//Java Methods are blocks of code that are only run when called (like a function or procedure)
     static void aMethod(){
         //static indicates that the method belongs to the Main class
         //void indicate that the method does not have a return value.
         System.out.println("aMethod was executed!");
     }
+
 //method with a parameter
     static void methodParameters(String name){//the string parameter name is added 
         System.out.println(name);
     }
+
 //method with multiple parameters
     static void multiParameters(String name, int age){//(you can add as many parameters as you like)
         System.out.println(name + ", " + age);
     }
+
 //method that returns a value
     static int returnsValue(int x){
         return 2 + x;// when called the method outputs the value of 2 + x
     }
+
 //method with an if statement
     static void checkIf(int x){
         if (x > 0){
@@ -26,13 +45,16 @@ public class Methods{
             System.out.println("The method's if statement is false.");
         }
     }
+
 //overloaded method
 static int methodOverload(int x, int y){
     return x + y;
-}//here the method is "defined" twice or overloaded allowing one method to work for both int and double here. 
+}
+//here the method is "defined" twice or overloaded allowing one method to work for both int and double here. 
 static double methodOverload(double x, double y){
     return x + y;
 }
+
 //Scope is defined as the area where a variable is accessible. 
 //Code is read from the beggining(top) to the end (bottom).
 static void variableScope (){//A code block is all of the code between curly braces.
@@ -42,6 +64,7 @@ static void variableScope (){//A code block is all of the code between curly bra
     System.out.println(scope);
     //code outside of the curly braces cannot access variables defined inside of the braces.
 }
+
 //Recursion occurs when a function calls itself
 public static int sumRecursion(int x){
     if(x > 0){
@@ -65,9 +88,13 @@ public void publicMethod(){//(run OOP2.java to see this used)
 }
 
     public static void main(String[] args){
+
         aMethod();//aMethod is called
+
         methodParameters("Jane");// the method is called with the argument Jane
+        
         methodParameters("Alice");// the method is called with the argument Alice
+        
         multiParameters("John", 18); // the method is called with two arguments
         //when a parameter is passed to a method it is called an argument.
         
@@ -88,3 +115,13 @@ public void publicMethod(){//(run OOP2.java to see this used)
         staticMethod();
     }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

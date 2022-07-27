@@ -1,10 +1,15 @@
+//Java Special Characters
+
 /*
 DISCLAIMER: 
 This file is meant to highlight the code and what it is doing. 
 You should not choose class, object, method, or variable names the way this file does. 
 */
 
-//Java Special Characters
+/**
+Notes:
+
+*/
 
 class SpecialCharacters {
   public static void main(String[] args){
@@ -33,3 +38,13 @@ class SpecialCharacters {
 
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

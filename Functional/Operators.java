@@ -1,20 +1,26 @@
+//Java Operators 
+
 /*
 DISCLAIMER: 
 This file is meant to highlight the code and what it is doing. 
 You should not choose class, object, method, or variable names the way this file does. 
 */
 
-//Java Operators
+/**
+Notes:
+  You will be using operators quite alot in your programs 
+  take care that you understand these operators.
+
+  Math in java follows order of operations (PEMDAS)
+
+  And now the math begins...
+*/
 
 class Operators {
   public static void main(String[] args){
     //ignore this above for now, but make sure it is in every program you write or they will not work.
     //Don't worry we will come back to this later.
 
-    /*
-    You will be using operators quite alot in your programs 
-    take care that you understand these operators.
-    */
 
     // Java Operators
     //Arithmetic Operators------------------------------------------------------------------------ 
@@ -80,6 +86,17 @@ class Operators {
     System.out.println(!(f < 4 && f < 1)); // ! is not
     // each of these will print true or false ie return a boolean value
     //-------------------------------------------------------------------------------------------
-    
   }
 }
+
+/*
+Common Errors:
+  Math...
+  PEMDAS
+
+*/
+
+/*
+Practice:
+
+*/

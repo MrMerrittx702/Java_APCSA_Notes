@@ -1,19 +1,14 @@
+//Java For loops
+
 /*
 DISCLAIMER: 
 This file is meant to highlight the code and what it is doing. 
 You should not choose class, object, method, or variable names the way this file does. 
 */
 
-//Java For loops
-
-class ForLoops {
-  public static void main(String[] args){
-    //ignore this above for now, but make sure it is in every program you write or they will not work.
-    //Don't worry we will come back to this later.
-
-    //Java For Loop----------------------------------------------------------------------------------------------------------------------------------------------------------
-    /*
-    For loops are used when the number of loops is known
+/**
+Notes:
+For loops are used when the number of loops is known
     They are great for looping through arrays and ArrayLists
 
     syntax:
@@ -27,9 +22,17 @@ class ForLoops {
     //Statement3 is executed every time after the code block has been executed
     
     Think of it like this:
-        for (start,end,pace) 
-    */
+        for (start,end,pace)
 
+*/
+
+class ForLoops {
+  public static void main(String[] args){
+    //ignore this above for now, but make sure it is in every program you write or they will not work.
+    //Don't worry we will come back to this later.
+
+    //Java For Loop----------------------------------------------------------------------------------------------------------------------------------------------------------
+    
     //typically you will see loops use the variables i and j, but that is not a rule just convention.
     for(int i = 0; i < 10; i++){
         System.out.println("For Loop printing i: " + i); 
@@ -111,7 +114,15 @@ class ForLoops {
         }
     }
 
-
-
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

@@ -1,10 +1,21 @@
+//Java While Loops
+
 /*
 DISCLAIMER: 
 This file is meant to highlight the code and what it is doing. 
 You should not choose class, object, method, or variable names the way this file does. 
 */
 
-//Java While Loops
+/**
+Notes:
+  while loops are often used when the number of loops required is unknown.
+    syntax:
+    while (condition){
+      <code to be executed>
+    }
+
+  LOOKOUT FOR INFINITE LOOPS!!!!
+*/
 
 class WhileLoops {
   public static void main(String[] args){
@@ -12,16 +23,7 @@ class WhileLoops {
     //Don't worry we will come back to this later.
 
     //Java While loops--------------------------------------------------------------------------------------------------
-    /*
-    while loops are often used when the number of loops required is unknown.
-    syntax:
-    while (condition){
-      <code to be executed>
-    }
-
-    LOOKOUT FOR INFINITE LOOPS!!!!
-    */
-    
+  
     boolean keepLooping = true; //set to false to skip this loop.
     while (keepLooping){
       System.out.println("Looping...");
@@ -84,3 +86,13 @@ class WhileLoops {
 
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

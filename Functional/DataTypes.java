@@ -1,34 +1,44 @@
+//Java Data Types 
+
 /*
 DISCLAIMER: 
 This file is meant to highlight the code and what it is doing. 
 You should not choose class, object, method, or variable names the way this file does. 
 */
 
-//Java Data Types
+/**
+Notes:
+
+Data Types are divided into two groups
+  Primitive data
+  Non-Primitive data
+
+  Primitive data types in Java
+    > primitive types are predefined by Java
+    > they always have a value
+    > named with a lower case letter (use camelCase)
+    > size of primitive types depend on the data
+
+  Non-Primitive data types in Java
+    > are created by a programmer and are not defined by Java (except for String)
+    > can be used to call methods to perform certain operations
+    > can be null (this will be important later!)
+    > start with an uppercase letter (except Strings and Arrays --> use camelCase)
+    > all have the same size
+*/
 
 class DataTypes{
   public static void main(String[] args){
     //ignore this above for now, but make sure it is in every program you write or they will not work.
     //Don't worry we will come back to this later.
 
-    /*
-    Data Types are divided into two groups
-      Primitive data
-      Non-Primitive data
-    */
 
-    /*
-    Primitive data types in Java------------------------------------------------------------------------------------------------------------------
-      > primitive types are predefined by Java
-      > they always have a value
-      > named with a lower case letter (use camelCase)
-      > size of primitive types depend on the data
-    */
-    
+    //Primitive data types in Java------------------------------------------------------------------------------------------------------------------
+  
     //Types that store numbers are split into two groups
       //Integer types and Floating point types
 
-    //Integer types---------------------------------------------
+    //Integer types----------------------------------------------
 
     //byte : size 1 byte : Stores whole numbers from -128 to 127
     byte byteLow = -128;
@@ -98,17 +108,9 @@ class DataTypes{
     double aDoubleToo = 1.618033988749d; //what special number am I?
     int anIntergerToo = (int) aDoubleToo;// outputs 1 ... but why?
 
-    //-----------------------------------------------------------------------------------------------------------------------------------------
-
-    /*
-    Non-Primitive data types-------------------------------------------------------------------------------------------------------------------
-      > are created by a programmer and are not defined by Java (except for String)
-      > can be used to call methods to perform certain operations
-      > can be null (this will be important later!)
-      > start with an uppercase letter (except Strings and Arrays --> use camelCase)
-      > all have the same size
-    */
-
+    //-------------------------------------------------------------------------------------------------------------------------------------------
+    //Non-Primitive data types-------------------------------------------------------------------------------------------------------------------
+    
     //strings : syntax String identifier = "<text>";
     String aString = "This is a string.";
 
@@ -151,7 +153,17 @@ class DataTypes{
     require thier own lessons.
     > Classes, Methods, Objects, Interfaces, ... etc.
     */
-
   }
-
 }
+
+/*
+Common Errors:
+  chars use single quotes '' not doublee quotes
+
+
+*/
+
+/*
+Practice:
+
+*/
