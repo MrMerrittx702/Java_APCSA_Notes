@@ -15,36 +15,27 @@ The files built here are based off of many resources including books, websites, 
 Made for Mr. Merritt's AP CSA classroom. 
 
 
-                    :~!77JJYYYYJ?7?J?^                                                              
-                :!J5G5?!!!!~~~~!J5Y?JG5J?77!~~^::.                                                  
-              ~YGBGG5~^~~~~~~~!PGGGGYG577!77777?????7~.                                             
-            .JPGGGGGG5?!~~~~~~?B5!7JPP!~~~~~~~~~~~~~!?JJ7^.                                         
-           ^55~!5GGGGGGP?~~~~~!G5~~~~~~~~~~~~~~~~!!~~~~755Y?!~:                                     
-         ^YGGG7^~YGGGGGGG?~~~~~JGJ^!5Y?7!!!!!!77?5GGPP5?~~~!7?J?7??~.                               
-       ^YGGGGGG5?~!?J5PGGG5?~~~~?G?!YPPPPPPPPPGPY???  ??5?~~~~~~??PGP5?.
-     :JGGGGGP?7J5P57~^~!75B5??7!~7PY~~~!!!!!~!!?YJJ?Y?9??P?~~~~~^YBGGGJ~.
-    7GGGGGG5~~~~~7JPPJ7~~!5GGGG5~!5G!~~~~~~~~~~~7JYPGGGG5GGGPJYP!~7YPGGGGY7~^.
-  :YGGGGGGG7~~~!~~~~!?YYYJ?JYYYYY5Y!~7?JYYYYJ?!~^~~~!?J?JGGGP??!~~~~!J7!77?Y5GPY7^.
- :PGGGGGGGP~~~!P5~~JY!~~!77?????7~!J5PPPGGPJ5GP5?!~~~JPP555J!~~~~~~~!??J??777YY555Y!~:
- YBGGGGGGGG!~~~JG5!PBY^~~~~~~~~~!JYPGBJ.7J. !GJYGPJ!~~~~~~~~~~~~~!?JJ7~~~~~~~~~^~!77PG5J~.
- 5GGGGGGGGGJ~~~~7PP7PG?~~~~~~~~~?JPGG5~^J: ^?. !J5PY?~~~~~~~~~~~~J?~~7!~~~~~~~!JJ?775PYJY5J7~. 
- 7BGGGGGGGGP~~~~~7G57PGJ~~~~YP77!PGG! ^!.:Y5~:?~ :55Y?~~~~~~~~!~~~~7Y?!~~~~~~~?7~~~~~~~?YGBGPP~ 
- .5BGGGGGGGG?~~~~~?GGGGG!~~7GGG7JG5?!?~ :J?.  !?^^PG?~~~~~~~~YJ~~~?5!~~~~~~~~~~~~~~~~~YGGGG5?PP~ 
-  .YBGGGGGGG5~~~~~~7PGGG?~~7GGP~JGG7~777JJ::~?!. ~GGP!?7~~~~?5~~~~J!~~~~~~~~~~~~~~~~!5GGGG?5GGG! 
-   .JGGGGGGGG!~~~~~~~?PGGPPYGGP~!PGG5J???JY5PGYY5PGGGY!Y?~~~JY~~~~~~~~~~~~~~~~~~~~~!PGG??GPGGP^ 
-     7GGGGGGG7~~~~~~~~~?5GGGGGG7^~J5PGGPP55YJ?7!!~!?PG57Y!!~!7~~~~~~~?J~~~~~~~~~~~~5BYY?7GGG5. 
-      ~GGGGGGJ~~~~~~~~~~~75GGGGP?~~~~~~!!777???777!~~JGG!~5!~~~~~~~~~!GJ~~~~~~~~~~!GG!J5PGGG~ 
-       :YGGGGG?~~~~~~~~~~~~JGP5PGGP5555PGGGGGGGGGGGP?^7PG7J5~~~~~~~~~~?G5~~~~~~~~~!GG7PGY??5J 
-         ^5GGGG?~~~~~~~~~~~~!~~?G5JJYGG?7Y5?!!!!!77?!~~!YGPG7~~~~!!~~~~YB?~~~~~~~~~PGGP7^!YJG5~     
-           7GGGP!~~~~~~~~~~~~~7GJ    :Y7^~~~~~~???????7~~?GGP!~~~!57~~~~5G!~~~~~~~~YGP!~~~JGJJ5Y7^  
-            !GGGJ~~~~~~~~~?7~~7GJ     .J~~!~~~~~~~~~~!?~~~!YGGJ!~~!5J~~~~55~~~~~Y7^7GJ^JPJ!?J  :!??:
-             ~GGP~~~~~~~!?GG!~~?G~     ^JJP5!~~~~~~~~~~~~~~~!YGGJ!~~P5~~~~5Y~~~~?P?~5GJPGGGY55:    .
-              ~GG!~~~~!PGGPJ!Y?!YG!     7B?:J~YJ~~~~~~~~~~~~~~75GGJ~?B5!~~~Y5~~~~!YJJGGGGGG5YPG?.   
-               !BJ~~~!PGP7!!YG: .^^      7^ ~J5BP7~~~~~~~~~~~!~~7PGP?5GP?~~~Y5!~~~~7PGG7!5P: .^?J!  
-                7P!~~JGGPJ77?!               !PGJ7?Y!~~~~~~~~J57^~JGGPGBGP?~~5GY?7!~~5GP~ !Y.   .~!.
-                 !Y!~!PY~.                    .^  :5GJ!~~~~~~~JGY!^7PG7JGB5Y!!PBJYPPY!JPJ! :.       
-                  ^!!!:                             ?GG57!!~7YYGBGY7!J7 :YY^7?75? .!JYYG?^:         
-                                                     ^YJ .~?YBGJJGG???J?  7J:.~?PY:   .~5~          
-                                                       .   .7PBJ .!: :!55^ .~.  .^^     .^          
-                                                             .7PY:      ^?!                         
-                                                               .~~        ::                    
+             .^!777?JJ??????~:...                                          
+           ~JPG5!~~~~~~?PG5YGY?7777!!~^:.                                  
+         :JGBGGPJ!~~~~!GY7Y5J~~~~~~~~!!77?!^.                              
+       .7G?~YGGGGGJ~~~~55~~!!~~~~~~~!???77JJ?7!^.: 
+     .7PBGGJ!7J5PGGY7~~~5J!5P5YYYY55YYYP5J?~~~!!?Y5?7. 
+    7PBGGY7?Y5J!~!?GPJ?7~J5~!!!!!!7?JJJ  5JYJ!~!~7GBBY!. 
+  ^5BGGGY~~~~!?YJ?7?5PP5?YY~~!777!~~!7J5555GBPJY!~7YPYYJ??7~:
+ !GGGGGG7~~YJ^7?!77???JJ?77Y55PGY5PY7~^~JY5P57~~~~~!?7777J55YJ~^. 
+:GGGGGGG?~~?PJYG7^~~~~~~7YPBP:?^ ?J?G57~~!!~~~~~~??7!~~~~~~~7?7PGY!:. 
+.PGGGGGG5~~~~PYYG?~~~?7!7PGJ^~~^?~:!^J5J~~~~~~~~!!!?7~~~~~!J7!!?77YGPY~ 
+ !GGGGGGG7~~~7PPGG~~!GG?YGJ~!:^J^ ~7.7G?~~~~~!J!~!Y!~~~~~~~~~~~^7GGG5YG! 
+  !GGGGGGY~~~~!YGGJ77GG!JGY77!J7~?J~~5B57?~~~J7~~!!~~~~~~~~~~~~JGPP55GG!
+   ^PGGGGP~~~~~~!YGGGGG7~JPPP55555YJ??JG5J?!~?!~~~~~?~~~~~~~~~?G5??GG5:
+    .YBGGG7~~~~~~~!JGGGP?!!!77?JJJJ??7!!5G7??~~~~~~~JY~~~~~~~~5P75PGG^ 
+      !5GGP7~~~~~~~~7J?JGP5PG55GP5YY5557^?PYP!~~~~~~~5P~~~~~~~5P557?JY^
+       .?GGP~~~~~~~~~~~5J..:J?~!~~~!77777~!5GY~~~??~~!PJ~~~~~~JGY~~7PYY?~. 
+         !GGJ~~~~~~7J~~5?    7!!7~~~~~~!7!~~?PP?~~JJ~~!P7~~~Y!!G7JPJ??..~!^
+          ~G5~~~~?YPP!77P7   .JP?7!7~~~~~~~~~~?PP?~Y5~^!57~~7Y75GGBGPP5~   
+           !G!~~JGP?75J.^!.   :7 !YBY!~~~~~~~~!~JGPJGP?~~YJ~~~75BY7P7.~?7: 
+            !Y~~5GY~^~.           !Y!!5?~~~~~~JJ!!5GPGB57~PPJ??75P!.7.  .^:
+             ^7!!^                    ^5PY!!~!?PGY7?J:?P777P7~?YJ5?^       
+                                        7J.:!5BY?P?7??.^7^^7Y!  :~J:       
+                                             ^YP^.. .!J~..   .     .       
+                                               ^7:     ^:                   
