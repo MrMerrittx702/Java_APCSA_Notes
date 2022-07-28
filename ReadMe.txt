@@ -3,6 +3,10 @@ Java files for AP Computer Science A
 
 Files contain notes, and code covering Java programming concepts. They are intended to help you get started with the java programming language.
 
+Useful links:
+Java Documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
+Git Documentation: https://git-scm.com/doc
+
 
 
 To Clone from the command line:
