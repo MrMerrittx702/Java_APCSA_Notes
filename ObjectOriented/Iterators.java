@@ -1,10 +1,22 @@
-//This file is meant to highlight the code and what it is doing. You should not choose class, object, method, or variable names the way this file does.
-//Java Iterator
+//Java Iterator\
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
-//an Iterator is and object aht can be use to loop through collections like ArrayList or HashSet.
-//Iterating is the technical term for looping
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
 
-//Java tokens are smallest elements of a program which are identified by the compiler. Tokens in java include identifiers, keywords, literals, operators and, separators.
+/**
+Notes:
+  an Iterator is and object aht can be use to loop through collections like ArrayList or HashSet.
+  Iterating is the technical term for looping
+
+  Java tokens are smallest elements of a program which are identified by the compiler. 
+  Tokens in java include identifiers, keywords, literals, operators and, separators.
+*/
+
 
 //to use an iterator import the java.util package
 import java.util.ArrayList; // import the ArrayList class
@@ -55,8 +67,8 @@ class Iterators{
     System.out.print("The remaining values in numList: ");
     System.out.println(numList);
 
-    //using a for loop or a for-each loop would not work correcly beacuse the collection is changing size at the same time that the code is trying to loop
-
+    //using a for loop or a for-each loop would not work correcly beacuse the 
+    collection is changing size at the same time that the code is trying to loop
   }
 }
 

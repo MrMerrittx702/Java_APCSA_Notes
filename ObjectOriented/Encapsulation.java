@@ -1,11 +1,18 @@
 //Java Encapsulation
-//Encapsulation is used to hide sensitive data from users
-  //declare class variables/attributes as private
-  //provide public get and set methods to access and update the value of private variables
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.htm
 
-//Get and Set
-  //the 'get' method returns the variable value, and the set method sets the value.
-public class Encapsulation{
+/**
+Notes:
+  Encapsulation is used to hide sensitive data from users
+    declare class variables/attributes as private
+    provide public get and set methods to access and update the value of private variables
+
+  Getters and Setters
+    the 'get' method returns the variable value, and the set method sets the value.
+
+*/
+
+  public class Encapsulation{
   private String attribute; //private restricts access to the class it is apart of
 
   //Getter
@@ -20,10 +27,18 @@ public class Encapsulation{
 
   }
 
-
-
   public static void main(String[] args){
 
 
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

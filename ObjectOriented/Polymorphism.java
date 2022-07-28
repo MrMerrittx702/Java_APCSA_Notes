@@ -1,6 +1,20 @@
 //Java Polymorphism
-//Polymorphism literally 'many' 'forms' allows for the use of methods to perform different tasks. 
-//Different classes can inherit a method and perform a different function
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
+
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
+
+/**
+Notes:
+  Polymorphism literally 'many' 'forms' allows for the use of methods to perform different tasks. 
+  Different classes can inherit a method and perform a different function
+*/
+
+
 
 class Parent{
   public void sayClassName(){
@@ -31,3 +45,13 @@ class Polymorphism {
     child2Obj.sayClassName();
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

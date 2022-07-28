@@ -1,4 +1,4 @@
-
+//Used with LambdaExpressions.java
 
 
 public class Thing implements Printable,PrintableParam,PrintableReturn{

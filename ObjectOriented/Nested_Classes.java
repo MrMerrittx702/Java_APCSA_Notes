@@ -1,4 +1,18 @@
 //Java Nested Classes
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
+
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
+
+/**
+Notes:
+
+*/
+
 //Classes inside classes
 
 class OuterClass {
@@ -40,3 +54,13 @@ public class Nested_Classes {
     //System.out.println(accessOuterObj.innerMethod());
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

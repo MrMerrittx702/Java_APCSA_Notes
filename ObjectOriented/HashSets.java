@@ -1,8 +1,12 @@
-//This file is meant to highlight the code and what it is doing. You should not choose class, object, method, or variable names the way this file does.
 //Java HashSet
-//HashSet is a collection of items with unique values
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
-//To use a HashSet import the java.util.HashSet; class
+/**
+Notes:
+HashSet is a collection of items with unique values
+
+To use a HashSet import the java.util.HashSet; class
+*/
 
 import java.util.HashSet;
 
@@ -55,7 +59,15 @@ class HashSets {
     aSet.clear();
     System.out.print("The values in aSet after using aSet.clear(): ");
     System.out.println(aSet);
-
-
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

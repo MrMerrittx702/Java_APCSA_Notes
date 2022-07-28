@@ -1,9 +1,20 @@
 //Java Enums
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
-//enums is a special class the represents a group of constants
-//use the enum keyword
-//seperate the constants with a comma. The should be in uppercase.
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
 
+/**
+Notes:
+  enums is a special class the represents a group of constants
+  use the enum keyword
+  seperate the constants with a comma. The should be in uppercase.
+
+*/
 
 public class Enumeration {
   enum Enumerated{
@@ -35,9 +46,16 @@ public class Enumeration {
     for(int i = 0; i < Enumerated.values().length;i++){
       System.out.println(Enumerated.values()[i]);
     }
-
   }
-
-
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/
 

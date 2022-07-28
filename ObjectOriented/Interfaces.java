@@ -1,5 +1,18 @@
 //Java Interface
-// Interfaces are completely abstract classes that group related methods with empty bodies
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
+
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
+
+/**
+Notes:
+  Interfaces are completely abstract classes that group related methods with empty bodies
+
+*/
 
 //interface
 interface AnInterface {
@@ -36,3 +49,13 @@ class Interfaces{
 
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

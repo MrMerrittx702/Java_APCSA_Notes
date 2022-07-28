@@ -1,9 +1,21 @@
 //Java Abstraction
-//Abstraction hides details
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
-//abstract keyword is a non-access modifiers used for classes and methods
-// abstract classes cannot be used to create objects and to access the class it must be inherited form another class
-// abstract methods can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
+
+/**
+Notes:
+Abstraction hides details
+abstract keyword is a non-access modifiers used for classes and methods
+abstract classes cannot be used to create objects and to access the class it must be inherited form another class
+abstract methods can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+*/
+
 
 abstract class Abstracted {
   public abstract void abstractMethod();
@@ -28,3 +40,13 @@ class Abstraction{
     inheritedObj.regularMethod();
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

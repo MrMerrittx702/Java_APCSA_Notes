@@ -1,6 +1,19 @@
-
-
 //Java Modifiers
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
+
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
+
+/**
+Notes:
+
+*/
+
+
 //Access Modifiers for classes
     //public: accessible by any other class
     //default: the class is only accessible by classes in the same package
@@ -31,3 +44,14 @@ public class Modifiers{
 
     }
 }*/
+
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

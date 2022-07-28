@@ -1,8 +1,21 @@
 //Java Linear Search
-//Linear /Sequential Search Algorithm
-//big O notation O(n) the program will iterate at most N times before finding the element.
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
-//In a Linear Search iterate over the list from the first index to the last index until the value is found.
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
+
+/**
+Notes:
+  Linear /Sequential Search Algorithm
+  big O notation O(n) the program will iterate at most N times before finding the element.
+
+  In a Linear Search iterate over the list from the first index to the last index until the value is found.
+*/
+
 import java.util.Scanner;//for taking user input
 
 class LinearSearch {
@@ -40,7 +53,23 @@ class LinearSearch {
     for (int spot = 0; spot < numbers.length; spot++){
       numbers[spot] = spot;
     }
-    return numbers;
-  }
+    return numbers;/*
+Common Errors:
 
+*/
+
+/*
+Practice:
+
+*/
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

@@ -1,16 +1,29 @@
 //Java Object-Oriented Progamming(OOP)
-//Benefits of OOP
-    //faster and easier to execute
-    //provides a clear structure for programs
-    //prevents repetition of code DRY "Don't Repeat Yourself" 
-    //code is easier to maintain, modify, and debug.
-    //makes it possible to make full reuseable applications with less code and shorter development time. 
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
-//Everything in java is associated with classes and objects. 
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
 
-//Classes and Objects the two main aspects of OOP
-//A class is a template for  objects
-//objects are a instance of a class that inherit variables and methods from the class. 
+/**
+Notes:
+Benefits of OOP
+    faster and easier to execute
+    provides a clear structure for programs
+    prevents repetition of code DRY "Don't Repeat Yourself" 
+    code is easier to maintain, modify, and debug.
+    makes it possible to make full reuseable applications with less code and shorter development time. 
+
+Everything in java is associated with classes and objects. 
+
+Classes and Objects the two main aspects of OOP
+    A class is a template for  objects
+    objects are a instance of a class that inherit variables and methods from the class.
+
+*/
 
 public class OOP{//Created the class OOP
     private int x = 0;
@@ -52,6 +65,16 @@ public class OOP{//Created the class OOP
         System.out.println("The passed value for a is:" + constructWithParameter.a);
     }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/
 
 
 

@@ -1,4 +1,5 @@
 //Math.random Range problem
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
 /**
 Notes:

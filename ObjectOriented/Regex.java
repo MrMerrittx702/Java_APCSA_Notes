@@ -1,16 +1,27 @@
 
 
 //Java Regex
-//Regular expressions are sequences of characters that form a search pattern.
-//Regex can bee used to for search patterns to describe what is beeing searched for.
-  //it can be a single character, or a more complicated pattern
-  // there is not a regulare expressions class bu there is the java.util.regex package    
-    /*
-    Classes in java.util.regex
-    Pattern class = defines a pattern to be used in a search
-    Matcher class = used to search for the pattern
-    PatternSyntaxException class = indicates syntax error in a regular expression pattern
-    */
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
+
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
+
+/**
+Notes:
+  Regular expressions are sequences of characters that form a search pattern.
+  Regex can bee used to for search patterns to describe what is beeing searched for.
+    it can be a single character, or a more complicated pattern
+    there is not a regulare expressions class bu there is the java.util.regex package    
+
+      Classes in java.util.regex
+      Pattern class = defines a pattern to be used in a search
+      Matcher class = used to search for the pattern
+      PatternSyntaxException class = indicates syntax error in a regular expression pattern
+*/
 
 import java.util.regex.Matcher; //import Matcher class
 import java.util.regex.Pattern; //import Pattern class
@@ -58,5 +69,15 @@ n?	        Matches any string that contains zero or one occurrences of n
 n{x}	      Matches any string that contains a sequence of X n's
 n{x,y}	    Matches any string that contains a sequence of X to Y n's
 n{x,}	      Matches any string that contains a sequence of at least X n's
+
+*/
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
 
 */

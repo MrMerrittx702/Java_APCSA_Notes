@@ -1,12 +1,24 @@
 //Not finished yet
 
 //Java Threads
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
-//Threads allow a program to operate more efficiently by doing multiple things at the same time.
-//threads can be used ot perform complicated tasks in the background without interrupting the main program.
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
 
-//There are two ways to create a thread
-//It can be created by extending the Thread class and overriding its run() method
+/**
+Notes:
+Threads allow a program to operate more efficiently by doing multiple things at the same time.
+threads can be used ot perform complicated tasks in the background without interrupting the main program.
+
+There are two ways to create a thread
+It can be created by extending the Thread class and overriding its run() method
+
+*/
 
 class MultiThreading extends Thread{
 //extend Threads prevents the class form extending another.
@@ -70,4 +82,14 @@ called a concurrency problem.
 to avoid concurrency problems, it is best to share as few attributes between threads as possible.
 If attributes need to be shared, one possible solution is to use the isAlive() method of the thread
 to check whether the thread has finished running before using any attributes that the thread can change.
+*/
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
 */

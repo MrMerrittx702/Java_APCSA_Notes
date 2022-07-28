@@ -1,13 +1,23 @@
-//This file is meant to highlight the code and what it is doing. You should not choose class, object, method, or variable names the way this file does.
-
 //Java Quick Sort
-//RECURSION INVOLVED
-/*
-QuickSort Steps
-1. Choose a pivot
-2. Partition values > pivot to the right and < pivot to the left.
-3. Recursively quicksort the values left and right of the pivot.
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
+
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
 */
+
+/**
+Notes:
+  RECURSION INVOLVED
+
+  QuickSort Steps
+  1. Choose a pivot
+  2. Partition values > pivot to the right and < pivot to the left.
+  3. Recursively quicksort the values left and right of the pivot.
+*/
+
 import java.util.Random;
 
 class QuickSortOptimized {
@@ -104,5 +114,14 @@ class QuickSortOptimized {
     }
     return numbers;
   }
-
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

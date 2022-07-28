@@ -1,14 +1,23 @@
-//This file is meant to highlight the code and what it is doing. You should not choose class, object, method, or variable names the way this file does.
-
 //Java Exceptions
-//When executing java code errors will occur
-//When errors occur java will stop and generate and error code
-//This is java throwing an exception
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
 
-//Java Try and Catch
-//The try statement allows you to define a block of code to be tested for errors while it is being executed
-//The catch statement allows you to define a block of code to be execute if an error occurs in the try block
+/**
+Notes:
+When executing java code errors will occur
+When errors occur java will stop and generate and error code
+This is java throwing an exception
+
+Java Try and Catch
+The try statement allows you to define a block of code to be tested for errors while it is being executed
+The catch statement allows you to define a block of code to be execute if an error occurs in the try block
+*/
 
 public class Exceptions {
   static void checkNum (int num){//used at line 41
@@ -41,3 +50,13 @@ public class Exceptions {
   checkNum(20);
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

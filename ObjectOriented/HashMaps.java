@@ -1,8 +1,20 @@
-//This file is meant to highlight the code and what it is doing. You should not choose class, object, method, or variable names the way this file does. 
 //Java HashMaps
-// HashMaps are often called dictionaries in other languages like Python
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
-// HashMaps store key:value pairs
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
+
+/**
+Notes:
+HashMaps are often called dictionaries in other languages like Python
+
+HashMaps store key:value pairs
+
+*/
 
 import java.util.HashMap; // import the HashMap class
 
@@ -65,3 +77,13 @@ class HashMaps {
     System.out.println(passwordHash);
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

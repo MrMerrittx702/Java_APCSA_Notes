@@ -1,17 +1,26 @@
-//This file is meant to highlight the code and what it is doing. You should not choose class, object, method, or variable names the way this file does.
-
 //Java Wrapper Class
-//Wrapper class provide a way to use primitive data types as objects
-/*
-Wrapper classes:
-  Byte
-  Short
-  Integer
-  Long
-  FLoat
-  Double
-  Boolean
-  Charactoer
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
+
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
+*/
+
+/**
+Notes:
+  Wrapper class provide a way to use primitive data types as objects
+
+  Wrapper classes:
+    Byte
+    Short
+    Integer
+    Long
+    FLoat
+    Double
+    Boolean
+    Character
 */
 
 
@@ -38,3 +47,13 @@ class Wrappers {
 
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

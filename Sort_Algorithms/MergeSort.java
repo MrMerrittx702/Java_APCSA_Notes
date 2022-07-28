@@ -1,16 +1,24 @@
 //Java Merge sort
-//big O (n*log n)
-//RECURSION
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
-/*
-Merge Sort steps
-1. Split array in 2
-
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
 */
 
 
+/**
+Notes:
+  big O (n*log n)
+  RECURSION
 
 
+  Merge Sort steps
+  1. Split array in 2
+
+*/
 
 import java.util.Random;
 
@@ -99,3 +107,13 @@ class MergeSort{
     return numbers;
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/

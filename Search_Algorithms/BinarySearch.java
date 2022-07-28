@@ -1,16 +1,29 @@
 //Java Binary Search
+//Java API documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
-//Binary Search utilizes the divide and conquer methodology.
-//Binary Search requires a sorted list in order to be effective.
-//big O notation O(log(N)) 
-/*
-binary search steps
-divide input into equal halves 
-compare goal element with the middle element
-if found loop ends
-else continue by dividing an selecting the appropriate partition of the array.
-search terminates when the the pointer moves past the last element.
+/* 
+DISCLAIMER: 
+This file is meant to highlight the code and what it is doing. 
+You should not choose class, object, method, or variable names 
+the way this file does. 
 */
+
+/**
+Notes:\
+  Binary Search utilizes the divide and conquer methodology.
+  Binary Search requires a sorted list in order to be effective.
+  big O notation O(log(N)) 
+
+  binary search steps
+    divide input into equal halves 
+    compare goal element with the middle element
+    if found loop ends
+    else continue by dividing an selecting the appropriate partition of the array.
+    search terminates when the the pointer moves past the last element.
+*/
+
+
+
 
 //There are two ways to implement the binary search algorithm
 
@@ -33,7 +46,7 @@ class BinarySearch {
     recurBinSearch(array, 0, array.length - 1, searchedElement);
 
   }
-//iteration-------------------------------------------------------------------------------------------------------------------------------------
+//ITERATION-------------------------------------------------------------------------------------------------------------------------------------
   private static int iterBinSearch(int[] array, int searchedElement){//iterative binary search
     int pointer = 0;
     int lastIndex = array.length -1;
@@ -83,3 +96,13 @@ class BinarySearch {
     return array;
   }
 }
+
+/*
+Common Errors:
+
+*/
+
+/*
+Practice:
+
+*/
