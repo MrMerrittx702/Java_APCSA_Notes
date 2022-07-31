@@ -86,7 +86,7 @@ class Operators {
     System.out.println(f < 4 || f < 10); // || is or
     System.out.println(!(f < 4 && f < 1)); // ! is not
     // each of these will print true or false ie return a boolean value
-    //-------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------- 
   }
 }
 
@@ -94,6 +94,7 @@ class Operators {
 Common Errors:
   Math...
   PEMDAS
+  Floating point error
 
 */
 
