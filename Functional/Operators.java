@@ -85,8 +85,25 @@ class Operators {
     System.out.println(f < 10 && f < 6); // && is and 
     System.out.println(f < 4 || f < 10); // || is or
     System.out.println(!(f < 4 && f < 1)); // ! is not
+    System.out.println(f < 6 ^ f < 4); // ^ is XOR (exclusive or) 
     // each of these will print true or false ie return a boolean value
-    //------------------------------------------------------------------------------------------- 
+    //-------------------------------------------------------------------------------------------
+    //Operator Precedence------------------------------------------------------------------------
+    /* 
+     * From first to last: (In general think PEMDAS)
+     * var++ and var--
+     * ++var and --var
+     * (type) (casting)
+     * ! (not)
+     * *,/,% Multiplication, Division, and Modulus(remainder)
+     * +,- Binary addition and subtraction
+     * <,<=,>,>= (Comparison/Relational)
+     * ==, != (Equality)
+     * ^ (XOR)
+     * && (And)
+     * || (Or)
+     * =,+=,-=,*=,/=,%= (Assignment)
+     */
   }
 }
 

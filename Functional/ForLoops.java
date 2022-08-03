@@ -46,6 +46,7 @@ class ForLoops {
         System.out.println("Used spot this time: " + spot);
     }
 
+    //The variable used to control the number of loops is called the control variable.
 
     //for loops are great for looping through arrays
     int[] array = {1,2,3,4,5,6,7,8,9,10};

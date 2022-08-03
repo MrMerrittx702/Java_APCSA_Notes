@@ -5,6 +5,7 @@ Files contain notes, and code covering Java programming concepts. They are inten
 
 Useful links:
 Java Documentation: https://docs.oracle.com/en/java/javase/18/docs/api/index.html
+Java Language Specifications: https://docs.oracle.com/javase/specs/index.html
 Git Documentation: https://git-scm.com/doc
 
 

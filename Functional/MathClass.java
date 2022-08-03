@@ -19,7 +19,7 @@ class MathClass {
     //Don't worry we will come back to this later.
 
     //Java Math Class
-    // methods for mathematical tasks
+    // General methods for mathematical tasks-----------------------------------------------------------------------------------------------------------------------
     Math.max(1,5); //find the largest value
 
     Math.min(1,5); // find the smallest value
@@ -31,6 +31,8 @@ class MathClass {
     Math.random(); // returns a random number
 
     //apply your math skills to do more with the random() method.
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Random Range with Java Math Class----------------------------------------------------------------------------------------------------------------------------
     
     int randomNum = (int)(Math.random() * 101); // random from 0 to 100
 
@@ -49,7 +51,11 @@ class MathClass {
 
     //why are these two different formulas necessary?
     
-    //check out RandomRange.java
+    //check out the RandomRange.java file
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    //For a complete list of the methods in the Math class checkout: https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html
   }
 }
 

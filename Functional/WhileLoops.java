@@ -17,6 +17,7 @@ Notes:
 
   LOOKOUT FOR INFINITE LOOPS!!!!
 */
+import java.util.Scanner;
 
 class WhileLoops {
   public static void main(String[] args){
@@ -25,7 +26,7 @@ class WhileLoops {
 
     //Java While loops--------------------------------------------------------------------------------------------------
   
-    boolean keepLooping = true; //set to false to skip this loop.
+    boolean keepLooping = false; //set to false to skip this loop.
     while (keepLooping){
       System.out.println("Looping...");
       //this loop will continue forever. Use Ctrl + C to exit an infinite loop in the terminal.
@@ -46,7 +47,6 @@ class WhileLoops {
       //adding to loop
       loop++;
     }
-
 
     //Do While Loops are special
     /*
@@ -85,11 +85,61 @@ class WhileLoops {
       }
     }
 
+    //sentinelControlled(); //try me
+
+    //infiniteLoop(); // try me
+
+    offByOne(); //try me
+
+  }
+
+  private static void sentinelControlled(){
+    //Sentinel Controlled loops
+    //sentinel controlled loops are loops with a special input value that signifies the end of the loop.
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter an integer: ");
+    int data = input.nextInt();
+
+    int sum = 0;
+    while (data != 0){
+      sum += data;
+      System.out.println("The current sum: " + sum);
+
+      System.out.println("Enter an integer(type 0 to end): ");
+      data = input.nextInt();
+    }
+
+    System.out.println("Final sum: " + sum);
+  }
+
+  //Error examples
+  private static void infiniteLoop (){
+    int count = 0;
+    while (count < 100){
+      System.out.println("Stuck in an infinite loop");
+      //The condition is never false so the loop continues forever
+    }
+  }
+
+  private static void offByOne () {
+    //we want to loop exaclty 100 times
+    int loopCount = 0;
+    int condition = 0;
+    while (condition <= 100){
+      System.out.println(condition);
+      condition++;
+      loopCount++;
+      //because we used <= we will loop 101 times
+      //we should use < here
+    }
+    System.out.println("Number of loops: " + loopCount);
   }
 }
 
 /*
 Common Errors:
+Infinite loops
+Off by one errors
 
 */
 

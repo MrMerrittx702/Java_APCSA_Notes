@@ -64,11 +64,15 @@ class FLOPErrors{
     Dealing with FLOP errors:
     Review the use of significant figures (sig figs)
     Rounding 
-    Integer Math
+    Integer Math(converting the values to integers completing the calculation then converting back.)
 
     For more on how floating point numbers are represented and used in computers look at the IEEE 754 standard
     Also check out this link on what every computer scientist should know about floating point math
     https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html
+
+    This calculator can help you understand how these values are represented using the IEEE 754 standard.
+    Keep in mind that the answers it generates are rounded automatically so you may not get the same result you do in java.
+    http://weitz.de/ieee/
     */
 
     //Rounding
@@ -86,6 +90,11 @@ class FLOPErrors{
     BigDecimal rounded = roundMe.round(m);
 
     System.out.println(rounded);
+
+    /*
+    Cheat Sheet for the BigDecimal Class
+    https://floating-point-gui.de/languages/java/
+    */
   }
   
   private static void addLoop(double num){

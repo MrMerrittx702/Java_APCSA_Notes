@@ -81,10 +81,16 @@ class IfElseStatements {
         break;
       default: break;
     }
-    // switch is evaluated once, value is compared with each case, if there is a match code is executed.
-    // break is used to break out of the switch block
-    // default specifies some code to run is there is no case match.
+    /*
+    Switch statements follow these rules:
+    * switch is evaluated once, value is compared with each case, if there is a match code is executed.
+    * break is used to break out of the switch block
+    * default specifies some code to run is there is no case match.
+    * switch (switch-expression) the switch expression must yeild a value of char,byte,short, int, or String
+    * The value of each case must have the same type as the switch expression
+    */
 
+    
     // Java Ternary Operators------------------------------------------------------------------------------------------------------------------
     //DO NOT use these. They don't make you smart they make code hard to read.
 
