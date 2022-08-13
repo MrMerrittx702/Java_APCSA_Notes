@@ -10,6 +10,13 @@ the way this file does.
 
 /**
 Notes:
+A project is an IDE-level grouping; its a set of source files, configurations, assets, ect. 
+that make up a working application.
+
+A package, on the other hand, is a grouping of related classes/source files.
+It is a way of organizing your code, and also works as the addressing scheme
+used by Java to find code you are importing.
+
 packages in java group related classes. Like a folder/directory
   packages avoid name conflicts 
   Build in packages come with the Java API

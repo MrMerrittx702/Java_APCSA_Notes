@@ -43,10 +43,23 @@ class Strings {
     // ! remember spaces count in string indeces 
     System.out.println("M is index number " + alphabet.indexOf("M") + " in the alphabet");
 
+    //use .substring() to create a substring of a larger string.
+    //! remember  spaces count in string indeces
+    String s = new String("Hello");
+    String s1 = "This is a String.";
+
+    System.out.println(s1.length()); //prints out 17
+    String s2 = s1.substring(13); //'ing.' 
+    String s3 = s1.substring(6,9); //"s a" 
+
     // to concat use + or you can use the concat() method to concatenate two strings
     String name1 = "Jane";
     String name2 = " Smith";
     System.out.println(name1.concat(name2));
+
+    // use .splits() to break up a string into an array of characters
+    String[] array = s1.split("_");//Splits the string into an array at spaces(_)
+    //.split(""); gives array that contains each individual character from a string
 
     //use .equals() to compare two strings
     String someText = "String";
@@ -85,6 +98,9 @@ class Strings {
 
     == will not always return the correct value
     .equals() will return the correct value
+
+    .equals() can be overridden
+    == cannot be overridden
 
     note: if you are testing whether or not two values are the same object then == is acceptable.
     */

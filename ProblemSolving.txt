@@ -1,4 +1,11 @@
 
+Write your code: 
+  as simple as possible
+  as readable as possible
+  with the fewest calculations
+  with comments
+
+
 Stepwise Refinement
 > The process of breaking a larger problem into smaller manageable subproblems.
 > Each sub problem could then be implemented with a method

@@ -109,6 +109,17 @@ class DataTypes{
     double aDoubleToo = 1.618033988749d; //what special number am I?
     int anIntergerToo = (int) aDoubleToo;// outputs 1 ... but why?
 
+    /*
+    "rounding"
+    When casting a floating point type to an integer type computers do not round.
+    They simply cut off the number at the decimal.
+    */
+
+    //example
+    double floatingPoint = 3.5d; //what will this become when cast to an integer?
+    int integerType = (int) floatingPoint;
+    System.out.println(integerType);
+
     //-------------------------------------------------------------------------------------------------------------------------------------------
     //Non-Primitive data types-------------------------------------------------------------------------------------------------------------------
     

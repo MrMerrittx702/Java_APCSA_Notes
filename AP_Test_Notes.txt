@@ -1,0 +1,103 @@
+First Things First --> You only need about half the point to get a 3 on the AP exam.
+
+Test is on paper so use paper for notes and sample problems( all FRQs should be on paper)
+
+It is recommended that you spend as much time actually coding and solving problems as possible before the exam.
+
+For the test do not worry about "pretty" code. Write your code so that it works and that is all that matters.
+
+Important---------------------------------------------------------------------------------------------------------------------------------------------
+
+When answering FRQs work on A then work on B don't do both at the same time.
+
+Steps for answering FRQs:
+1 Read and understand the problem
+2 Handle the return (write the return first and cross out if no return)
+3 Write a to do list (algorithm)
+4 Declare and initialize variables
+5 Code
+6 Reread check against examples(important)
+  (These steps are as helpful in real world coding as much as they help on the test)
+
+Steps for a class FRQ:
+1 Read and understand the problem
+2 Class heading. Does it extend another class? (implements? does not exist on the AP test and loses points)
+3 Create private instance variables. (they must be private or you will lose points) assume private
+4 Constructor(s) 
+5 Other methods
+6 Reread - Check agains the examples
+
+When writing your code:
+> start with variables 
+> then input
+> next calculations
+> finally result
+
+Helpful for earning better scores:
+  Draw vertical lines between braces
+  Neat handwriting and make sure to convey your intent clearly
+  Don't comment your code in the exam
+  -->Unless you pet the cat backwards then comment your code.(ask your teacher they will let you know if you pet the cat backwards)
+
+
+Additional Notes:----------------------------------------------------------------------------------------------------------------------------
+
+What is the purpose of a constructor?
+  Answer: constructors initialize instance variables 
+
+"Unrelated methods" mean methods that do not call each other.
+Always check for parameters
+
+Check for null when working with an array of objects. You must have plan for null values.
+  if(array[index] != null){
+    array[index].method(); 
+  }
+  
+
+Strings are immutable(cant change)
+
+Keep track of the type of data 
+
+The default int value is 0 so there is no "need" to initialize. But INITILIZE anyway. 
+
+Stay away from ternary operator on the test (noone uses them and it isn't impressive)
+
+Use variables over hard coded numbers(the AP test wont give you the values)
+
+For-each loop is bad idea for FRQs but do show up in the MultipleChoice
+
+Check for edge cases (division by 0 or null values)
+
+if you have an array of objects always check for null.
+if you do not it will throw an error and the AP test will count off. 
+
+Students will lose points for using double equals to compare strings
+  use the equals() method for objects instead.
+
+Often part B in questions will call part A in FRQs.
+  Whether you did part A correctly or not assume it works.
+
+You cannot do math with objects.
+
+For class design:
+    Create private instance variables first then public methods
+
+extends == IS-A relationship
+composition == HAS-A relationship
+
+if the child does not have the method it looks in the parent method
+if the parent does not have the method it looks to the grandparent(object)
+
+attributes are nearly always private
+methods are nearly always public
+
+Do not attempt recursion on FRQs(You are likely to mess up, and they rarely earn good scores for FRQs)
+
+This question may appear. 
+  If you are using a binary search algorithm and the array is 10000 indices long how many times will it loop?
+    Solution: divide by 2 all the way to the end and count how many times you divided
+
+The first line of a child constructor needs to be super(); super refers to the parent class.
+  super().method can be used to call the methods of the parent class in a child class. 
+
+An enhanced for loop (for-each loop) is all bad idea for FRQs but do show up in the MultipleChoice

@@ -105,6 +105,13 @@ class IfElseStatements {
 
 /*
 Common Errors:
+  A common error that is missed by the compiler
+    if ( x = 0){} did you notice the error?
+      in this case we performed a assignment statement instead of a comparison
+  Best practice is to reverse the comparison
+    if (0 = x){} this will be caught by the compiler because numbers cannot be used as identifiers for variables
+  SO
+    if (0 == x){}
 
 */
 
