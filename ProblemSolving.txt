@@ -1,0 +1,11 @@
+
+Stepwise Refinement
+> The process of breaking a larger problem into smaller manageable subproblems.
+> Each sub problem could then be implemented with a method
+> This makes a problem easier to write, reuse, debug, test, modify, and maintain
+
+Benefits
+  > Simpler Programs
+  > Reuseable Methods
+  > Easier Development, Debugging, and Testing.
+  > Facilitates Teamwork 

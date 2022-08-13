@@ -10,17 +10,32 @@ the way this file does.
 */
 
 
+
 /**
 Notes:
+Methods enable code sharing an reuse.
+They are also used to modularize code or break it up into parts that are easier to work with. 
+
+Method Syntax
+    modifier returnValueType methodName(list of parameters){
+        //Method Code block
+    }
+
+We declare variables, but define methods
+> declaring usually involves the allocation of memory.
 
 */
 
 public class Methods{
-//Java Methods are blocks of code that are only run when called (like a function or procedure)
+//Java Methods are blocks of code that are only run when called (like a function or procedure in other languages)
     static void aMethod(){
-        //static indicates that the method belongs to the Main class
-        //void indicate that the method does not have a return value.
+        //static indicates that the method belongs to the Main class and can be run without creating an object of the class.
+        //void indicates that the method does not have a return value.
         System.out.println("aMethod was executed!");
+
+        //methods that do not return can use a return statement to terminate the method.
+        //syntax
+        return;
     }
 
 //method with a parameter
@@ -30,12 +45,14 @@ public class Methods{
 
 //method with multiple parameters
     static void multiParameters(String name, int age){//(you can add as many parameters as you like)
+    // declared method parameters are seperated by a comma
         System.out.println(name + ", " + age);
     }
 
 //method that returns a value
     static int returnsValue(int x){
         return 2 + x;// when called the method outputs the value of 2 + x
+        //return statements are required when the method returns a value.
     }
 
 //method with an if statement
@@ -52,12 +69,15 @@ static int methodOverload(int x, int y){
     return x + y;
 }
 //here the method is "defined" twice or overloaded allowing one method to work for both int and double here. 
+//overloaded methods can have the same name, but must have different parameters.
 static double methodOverload(double x, double y){
     return x + y;
 }
+//Ovverloading methods can make programs clearer and more readable. 
+//Methods that perform the same function with different parameters should be given the same name. 
 
-//Scope is defined as the area where a variable is accessible. 
-//Code is read from the beggining(top) to the end (bottom).
+//Scope is defined as the area of a program where a variable is accessible. 
+//Code is read from the beginning(top) to the end (bottom).
 static void variableScope (){//A code block is all of the code between curly braces.
     //code before the variable cannot access it.
     String scope = "Code after this point can access the variable scope.";
@@ -65,6 +85,8 @@ static void variableScope (){//A code block is all of the code between curly bra
     System.out.println(scope);
     //code outside of the curly braces cannot access variables defined inside of the braces.
 }
+//variables declared inside of a block(method, loop, etc.) have local scope.
+//variables accessible throughout the program have global scope.
 
 //Recursion occurs when a function calls itself
 public static int sumRecursion(int x){
@@ -90,8 +112,10 @@ public void publicMethod(){//(run OOP2.java to see this used)
 
     public static void main(String[] args){
 
-        aMethod();//aMethod is called
+        aMethod();//aMethod is called (calling or invoking the method mean the same thing)
 
+        //arguments are values passed to the parameters created when defining the method.
+        //arguments are pass by value to methods meaning we provide the value not a reference. 
         methodParameters("Jane");// the method is called with the argument Jane
         
         methodParameters("Alice");// the method is called with the argument Alice
@@ -119,6 +143,7 @@ public void publicMethod(){//(run OOP2.java to see this used)
 
 /*
 Common Errors:
+arguments must match the parameters in order, number, and compatible type as defined in the method signature
 
 */
 
@@ -126,3 +151,14 @@ Common Errors:
 Practice:
 
 */
+
+/*
+Additional Notes:
+When a method is called the system creates and activation record or activation frame that stores parameters and variables for the method.
+The activation record is placed in an area of memory called the call stack.
+Call Stack aka ececution stack, runtime stack, or machine stack, is often shortened to just "the stack"
+When a method calls another method the caller's activation record is kept intact, and the new activation record is created for the new method called.
+When the method finishes its work and returns to its caller, its activation record is removed from the call stack. 
+The call stack follow LIFO or last in first out
+
+/*

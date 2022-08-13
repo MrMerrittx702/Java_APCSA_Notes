@@ -118,6 +118,10 @@ class DataTypes{
     //arrays : syntax type[] identifier = new type[<size>]; or type[] identifier = {0,1,2,3.....};
     int[] declareSize = new int[5];//create a new empty array of length 5.
 
+    //Array Initializers
+    //This is a shorthand that combines declaration, creation, and initialization of an array. 
+    //syntax
+      // elementType[] identifier = {value1,value2,...};
     int[] intArray = {1,2,3,4,5};//what is the length of this array?
     
     String[] stringArray = {"Index 0", "Index 1", "Index 2"};//what is the length of this array?
@@ -130,6 +134,7 @@ class DataTypes{
     //to change the value in an array access the value's index. syntax arrayIndentifier[<index>] = <new value>;
     intArray[0] = 5; 
     
+    // Once created the size of an array is fixed.
     //! remember the length of an array cannot be changed without making a new array
 
     //to check the length of an array use .length : syntax arrayIndentifier.length
@@ -137,10 +142,22 @@ class DataTypes{
     System.out.println("The length of stringArray is " + stringArray.length);
 
     /*
+    More Array Notes:
+    Unlike declarations for primitive data type variables, the declaration of an array variable does not allocate any space in memory for the array.
+    It creates a storage location for the reference to an array. 
+    If a variable does not contain a reference to an array, the value of the variable is "null" (meaning nothing).
+
+    Array variables only hold a reference to the actual array, but this can usually be ignored. 
+      So for simplicity we can say that the Array variable is an "array".
+
+    Arrays are typically processed using for loops.
+
     Context that will make sense later
       > Strings and Arrays are both Objects in java
       > length is an instance variable that returns the length of an array
       > the length variable is only used for arrays 
+
+    
     */
 
     //Multi Dimensional arrays
