@@ -25,6 +25,8 @@ For loops are used when the number of loops is known
     Think of it like this:
         for (start,end,pace)
 
+    When using i as a loop control variable think "i for index"
+
 */
 
 class ForLoops {
@@ -121,6 +123,8 @@ class ForLoops {
 
 /*
 Common Errors:
+ArrayIndexOutOfBoundsException: This occurs when you attempt to access an index outside of the array.length-1
+Off-by-one error: This often occurs when <= is used instead of < for example  (spot <= array.length) instead of (spot < array.length)
 
 */
 

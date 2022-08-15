@@ -15,12 +15,27 @@ the way this file does.
 Notes:
 Processing arrays is an import skill that will be used quite often
 
+Arrays are objects in Java. The JVM Stores the objects in an area of memory called the heap, which is used for dynamic memory allocation.
+
+Java uses pass by value to pass arguments to a method. 
+  For primitive types the arguments value is passed. 
+
+However for arrays the value passed is a reference to an array. (called pass-by-sharing)
+Therefore:
+  Arrays are passed to methods by reference. This means that if you change an array in a method the array will change outside of the method. 
+
+When a method returns an array it returns a reference to the array. 
+
+A variable number of arguments of the same type can be passed to a method and treated as an array. 
+  syntax--> typeName... parameterName
+
 Also see 
   RandomShuffling.java
   ShiftingElements.java
 
-
 */
+// for processing arrays with the API see java.util.Arrays class
+
 
 import java.util.Scanner;
 
@@ -107,6 +122,20 @@ class ProcessingArrays{
     return indexOfMax;
   }
 
+  //Copying Arrays
+  private static int copyArrays (int[] array){
+    //There are 3 ways to copy an array. 
+    // Use a loop to copy each individual element (written here)
+    int [] newArray = new int[array.length];
+
+    for (int i = 0; i < array.length; i++){
+      newArray[i] = array[i];
+    }
+
+    // Use the static arraycopy method in the System class
+    // Use the clone method to copy arrays
+  }
+
   
 
 
@@ -114,7 +143,8 @@ class ProcessingArrays{
 
 /*
 Common Errors:
-
+ArrayIndexOutOfBoundsException: This occurs when you attempt to access an index outside of the array.length-1
+Off-by-one error: This often occurs when <= is used instead of < for example  (spot <= array.length) instead of (spot < array.length)
 
 */
 

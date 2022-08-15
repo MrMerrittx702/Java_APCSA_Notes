@@ -20,6 +20,9 @@ Notes:\
     if found loop ends
     else continue by dividing an selecting the appropriate partition of the array.
     search terminates when the the pointer moves past the last element.
+
+  If an array is sorted binary search is more efficient than linear search for finding an element in an array.
+  For larger arrays sorting the array then using binary search is more effiecient than using a linear search. 
 */
 
 

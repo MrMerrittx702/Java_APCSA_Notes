@@ -14,6 +14,9 @@ Notes:
   big O notation O(n) the program will iterate at most N times before finding the element.
 
   In a Linear Search iterate over the list from the first index to the last index until the value is found.
+
+  If an array is sorted binary search is more efficient than linear search for finding an element in an array.
+  For larger arrays sorting the array then using binary search is more effiecient than using a linear search. 
 */
 
 import java.util.Scanner;//for taking user input
@@ -53,17 +56,11 @@ class LinearSearch {
     for (int spot = 0; spot < numbers.length; spot++){
       numbers[spot] = spot;
     }
-    return numbers;/*
-Common Errors:
-
-*/
-
-/*
-Practice:
-
-*/
+    return numbers;
+    
+    
+  }
 }
-
 /*
 Common Errors:
 
@@ -73,3 +70,5 @@ Common Errors:
 Practice:
 
 */
+
+
