@@ -17,7 +17,7 @@ git clone https://github.com/MrMerrittx702/Java_APCSA_Notes.git
 
 The files built here are based off of many resources including books, websites, youtube videos, etc. 
 
-Made for Mr. Merritt's AP CSA classroom. 
+Made for Mr. Merritt's AP CSA classroom.   
 
 
              .^!777?JJ??????~:...                                          
