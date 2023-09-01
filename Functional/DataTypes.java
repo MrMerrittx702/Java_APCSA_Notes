@@ -63,12 +63,12 @@ class DataTypes{
 
     //float : size 4 bytes : Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
     float floatValue = 3.141592f;//what special number am I?
-    // ! remember the percision of a float is only 6 or 7 decimal digits
+    // ! remember the precision of a float is only 6 or 7 decimal digits
     // ! remember that float values end with an "f"
 
     //double : size 8 bytes : Stores fractional numbers. Sufficient for storing 15 decimal digits
     double doubleValue = 2.718281828459045d;///what special number am I?
-    // ! remember the percision of double is about 15 digits
+    // ! remember the precision of double is about 15 digits
     // ! remember that double values end with a "d"
 
     //Scientific numbers can be indicated using an E to indicate power of 10.
@@ -95,7 +95,7 @@ class DataTypes{
 
     /*
     Casting
-      > converts one primative type to another type is 
+      > converts one primitive type to another type is 
       > widening casting: converting  a smaller type to a larger type
       > narrowing casting: converting a larger type to a smaller type
     */
@@ -107,7 +107,7 @@ class DataTypes{
 
     //narrowing casting must be done manually
     double aDoubleToo = 1.618033988749d; //what special number am I?
-    int anIntergerToo = (int) aDoubleToo;// outputs 1 ... but why?
+    int anIntegerToo = (int) aDoubleToo;// outputs 1 ... but why?
 
     /*
     "rounding"
@@ -142,13 +142,13 @@ class DataTypes{
     System.out.println(intArray[4]); //why does this print out 5?
     System.out.println(stringArray[0]);
 
-    //to change the value in an array access the value's index. syntax arrayIndentifier[<index>] = <new value>;
+    //to change the value in an array access the value's index. syntax arrayIdentifier[<index>] = <new value>;
     intArray[0] = 5; 
     
     // Once created the size of an array is fixed.
     //! remember the length of an array cannot be changed without making a new array
 
-    //to check the length of an array use .length : syntax arrayIndentifier.length
+    //to check the length of an array use .length : syntax arrayIdentifier.length
     System.out.println("The length of intArray is " + intArray.length);
     System.out.println("The length of stringArray is " + stringArray.length);
 
