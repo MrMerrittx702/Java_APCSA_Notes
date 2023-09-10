@@ -12,6 +12,10 @@ Notes:
   You will be using operators quite alot in your programs 
   take care that you understand these operators.
 
+  expessions are evaluated to produce a single value
+
+  The value of an expression has a type based on the evaluation of the expression
+
   Math in java follows order of operations (PEMDAS)
 
   And now the math begins...
@@ -24,12 +28,44 @@ class Operators {
 
 
     // Java Operators
+    //Assignment Operator-------------------------------------------------------------------------
+    //The = operator is used for assigning and changing values of variables 
+    int num = 1;
+    double duo = 2.0;
+    boolean bool = true;
+    String str = "Hello World";
+
+
+
     //Arithmetic Operators------------------------------------------------------------------------ 
     System.out.println(1 + 2);//add
     System.out.println(2 - 1);//substract
     System.out.println(2 * 2);//multiply
     System.out.println(4 / 2);//divide
     System.out.println(10 % 3);//modulus (aka remainder)
+
+    //Two ints evaluate to an int
+    System.out.println(2 + 2); //4
+    //An operation that includes a double evaluates to a double
+    System.out.println(2.0 + 2);//4.0
+    //Operators can be used to construct compound expressions 
+    System.out.println(4 + 2 - 1 * 6);
+    //Attempting to divide by 0 results in ArithmeticException to occur
+    System.out.println(2/0); //ArithmeticException
+    //Adding to a string results in concatenation
+    System.out.println(2 + "Hello"); //2Hello
+
+    //Rouding a double
+    int x = 1.5; //round up
+    int y = 1.2; //round down
+    int z = -1.5; //round up
+
+    //add 0.5 for positive doubles
+    System.out.println((int)(x + 0.5)); // 2
+    System.out.println((int)(y + 0.5)); // 1
+    //sub 0.5 for negative doubles
+    System.out.println((int)(z - 0.5)); // -2
+
     
     int x = 0;
     System.out.println(++x); //pre-increment x by 1
@@ -47,7 +83,7 @@ class Operators {
     //welcome to math with even more letters!!!!
     //--------------------------------------------------------------------------------------------
 
-    //Assignment Operators------------------------------------------------------------------------
+    //Compound Assignment Operators------------------------------------------------------------------------
     int e = 10;
     e += 1; //same as e = e + 1 (important) adds 1 to e and sets that value to e
     e -= 1; //same as e = e - 1 (important) subtracts 1 from e and sets that value to e
@@ -64,7 +100,7 @@ class Operators {
     //---------------------------------------------------------|
     //--------------------------------------------------------------------------------------------
 
-    //Java Comparison Operators-------------------------------------------------------------------
+    //Java Relational Operators-------------------------------------------------------------------
     // ! think back to inequalities in math class
 
     //These are boolean expressions
@@ -80,7 +116,7 @@ class Operators {
     System.out.println(f < 4); // less than
     System.out.println(f >= 5); // greater than or equal to
     System.out.println(f <= 6); // less than or equal to
-
+    instanceof //checks if an object is an instance of a class
     //Java logical Operators
     System.out.println(f < 10 && f < 6); // && is and 
     System.out.println(f < 4 || f < 10); // || is or
@@ -90,6 +126,7 @@ class Operators {
     //-------------------------------------------------------------------------------------------
     //Operator Precedence------------------------------------------------------------------------
     /* 
+     * Generally Arithmetic, Relational, then Logical
      * From first to last: (In general think PEMDAS)
      * var++ and var--
      * ++var and --var

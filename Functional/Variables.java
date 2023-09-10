@@ -12,6 +12,8 @@ Notes:
   Variables: are the identifiers given to locations in memory that are used to store data. 
     in other words, names for values that can change.
 
+  The memory that assiciated with a variable holds the literal value of primitive data. 
+
   Follow these naming rules for creating identifiers for variables, methods, and objects.
     General Naming rules:
       > may contain letters, digits, underscores and dollar signs
@@ -23,6 +25,17 @@ Notes:
 */
 
 class Variables {
+
+  static void variableScope (){//A code block is all of the code between curly braces.
+    //code before the variable cannot access it.
+    String scope = "Code after this point can access the variable scope.";
+    //code after the variable can access it.
+    System.out.println(scope);
+    //code outside of the curly braces cannot access variables defined inside of the braces.
+  }
+  //variables declared inside of a block(method, loop, etc.) have local scope.
+  //variables accessible throughout the program have global scope.
+
   public static void main(String[] args){
   //ignore this above for now, but make sure it is in every program you write or they will not work.
   //Don't worry we will come back to this later.

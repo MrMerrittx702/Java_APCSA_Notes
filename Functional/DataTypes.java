@@ -9,10 +9,14 @@ You should not choose class, object, method, or variable names the way this file
 
 /**
 Notes:
+A literal is the source code representation of a fixed value.
+  (an actual value, does not represent something else.)
+
+A type is a set of values(a domain) and a set of operations on them. 
 
 Data Types are divided into two groups
   Primitive data
-  Non-Primitive data
+  Non-Primitive data (reference)
 
   Primitive data types in Java
     > primitive types are predefined by Java
@@ -20,12 +24,13 @@ Data Types are divided into two groups
     > named with a lower case letter (use camelCase)
     > size of primitive types depend on the data
 
-  Non-Primitive data types in Java
+  Non-Primitive(reference) data types in Java
     > are created by a programmer and are not defined by Java (except for String)
     > can be used to call methods to perform certain operations
     > can be null (this will be important later!)
     > start with an uppercase letter (except Strings and Arrays --> use camelCase)
     > all have the same size
+
 */
 
 class DataTypes{
@@ -52,6 +57,8 @@ class DataTypes{
     //int : size 4 bytes : Stores whole numbers from -2,147,483,648 to 2,147,483,647
     int intLow = -2147483648;
     int intHigh = 2147483647;
+
+    
 
     //long : size 8 bytes : Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
     long longLow = -9223372036854775808L;
@@ -113,12 +120,27 @@ class DataTypes{
     "rounding"
     When casting a floating point type to an integer type computers do not round.
     They simply cut off the number at the decimal.
+    This is called truncating.
     */
 
     //example
     double floatingPoint = 3.5d; //what will this become when cast to an integer?
     int integerType = (int) floatingPoint;
     System.out.println(integerType);
+
+
+
+    //Wrapper Classes for Primitive Types--------------------------------------------------------------------------------------------------------
+    Integer intWrapper;
+    Double duoWrapper;
+    Boolean boolWrapper;
+
+    Byte byteWrapper;
+    Short shortWrapper;
+    Long longWrapper;
+    Float floatWrapper;
+    Character charWrapper;
+
 
     //-------------------------------------------------------------------------------------------------------------------------------------------
     //Non-Primitive data types-------------------------------------------------------------------------------------------------------------------
@@ -182,12 +204,19 @@ class DataTypes{
     require thier own lessons.
     > Classes, Methods, Objects, Interfaces, ... etc.
     */
+
+    
+
+
+
+
   }
 }
 
 /*
 Common Errors:
   chars use single quotes '' not doublee quotes
+  Integer Overflow Error
 
 
 */

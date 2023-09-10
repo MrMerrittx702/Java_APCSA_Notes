@@ -10,6 +10,17 @@ the way this file does.
 
 /**
 Notes:
+    Covered in this file:
+    //> Access Modifiers
+    //> Instance Variables, Attributes, Feilds, and Properties
+    //> Constructors
+    //> 'this' keyword
+    //> Static vs. Non Static Methods
+    //> Object Instantiation
+    //> Accessing Instance Variables and Static Fields
+    //> Accessing Methods
+    //> See Objects2.java for more
+
 Benefits of OOP
   faster and easier to execute
   provides a clear structure for programs
@@ -21,226 +32,282 @@ Everything in java is associated with classes and objects.
 
 Classes and Objects the two main aspects of OOP
   A class is a template for  objects
-  objects are a instance of a class that inherit variables and methods from the class.
+  objects are a instance of a class that inherit variables(attributes) and methods from the class.
+
+An objects behavior refers to what the object can do(or what can be done to it) and is defined by methods
+
+An objects default value is null
+The memory assocaite with a variable of a reference type holds and object reference value or, if there is no object, null. This value is the memory address of the referenced object. 
 
 */
 import java.util.ArrayList;//importing the ArrayList class to create ArrayLists
 import java.util.Arrays;// importing the Arrays class to use Arrays.asList
 
-public class Objects{//Created the 'Objects' class
-  //=============================================================================================================================================================================//
-  //Declaring Class (Attributes)(Fields)(Properties)
-  
-  //See Modifiers for more on public, private, protected, and default
+public class Objects {//Created the 'Objects' class
+    //============================================================================================================================================================================//
+    //Access Modifiers (default, public, private, protected)
+    //>See Modifiers for more on public, private, protected, and default
+    int var1;
+    public int var2;
+    private int var3;
+    protected int var4;
 
-  //Declare Private Attributes
-  
-  private int num; // default 0
-  private boolean bool; // default false
-  private double duo; // default 0.0
-  private String str; // default null
-  private String[] strArray = new String[5]; // default null null null null null
-  private ArrayList<String> strList = new ArrayList<>(); //default []
+    //============================================================================================================================================================================//
+    //Keyword Modifiers(final, static, etc.)
+    //>See Modifiers for more on final and static
+    final var5;
+    static var6;
 
-  
-  //Declare and Initialize Private Attributes
-  
-  private int num = 0;
-  private boolean bool = false;
-  private double duo = 3.14158;
-  private String str = "Hello World";
-  private String[] strArray = {"a","b","c","d","e"};
-  private ArrayList<String> strList = new ArrayList<>(Arrays.asList("v","w","x","y","z"));
+    //============================================================================================================================================================================//
+    //Instance Variables, Attributes, Feilds, and Properties
+        //> These are typically private
+        //> Instance Variables: declared outside of any method and associated with objects (non static)
+        //> Attributes: any peice of data that characterizes an object or entity
+        //> Fields: describes data members within a class, includes instance variable and static variables
+        //> Properties: describes the characteristics or attributes of an object that can be accessed or modified through methods (getters and setters)
+        
+        //> These terms overlapp and are often confusing to apply so you may hear them used interchangeably. 
 
-
-  //Static Attributes (belong to the class and is shared between all objects of the class)
-  private static int staticNum = 1;
-  private static boolean staticBool = true;
-  private static double staticDuo = 1.61803; 
-  private static String staticStr = "I'm a Static String";
-  private static String[] staticStrArray = {"s","t","a","t","i","c"};
-  private static ArrayList<String> staticStrList = new ArrayList<>(Arrays.asList("c","i","t","a","t","s"));
+    //Declare Instance Variables
+        //> instance variables have the same name but different values for each instance of the class (object)
+        //> instance variables are typically declared in the class definition, but initialized with a constructor.
+    private int num; // default 0
+    private boolean bool; // default false
+    private double duo; // default 0.0
+    private String str; // default null
+    private String[] strArray = new String[5]; // default null null null null null
+    private ArrayList<String> strList = new ArrayList<>(); //default []
 
 
-  
-  //The variables above are "attributes" of the class "Objects"
-  //These variables can be called "attributes, fields, or properties"
+    //Declare and Initialize Static Fields 
+        //> static fields belong to the class and are shared between all objects of the class
+        //> static fields can be declared and initialized under the class header.
+    private static int staticNum = 1;
+    private static boolean staticBool = true;
+    private static double staticDuo = 1.61803; 
+    private static String staticStr = "I'm a Static String";
+    private static String[] staticStrArray = {"s","t","a","t","i","c"};
+    private static ArrayList<String> staticStrList = new ArrayList<>(Arrays.asList("c","i","t","a","t","s"));
 
-  //=============================================================================================================================================================================//
-  //Class Constructor
-  //If not constructor is defined a default no argument constructor is used.
+    public static Objects testObject = new Objects();// see Objects2.java for the use of this object. 
 
-  public Objects(){//This is the no argument or no parameter constructor for the class
-  //use the no args constructor to set default values for instantiated objects and call any default methods.
-      int num = 0;
-      boolean bool = false;
-      double duo = 3.14158;
-      String str = "Hello World";
-      String[] strArray = {"a","b","c","d","e"};
-      ArrayList<String> strList = new ArrayList<>(Arrays.asList("v","w","x","y","z"));
-  }
+    
+    
 
-  //Overloaded Constructor
-  public Objects(int n, boolean b, double d, String s, String[] sA, ArrayList<String> sL){
-  //This constructor overloads the previous constructor, and allows you to specify values when instantiating an object
-      int num = n;
-      boolean bool = b;
-      double duo = d;
-      String str = s;
-      String[] strArray = sA;
-      ArrayList<String> strList = sL;
-      //The 'this' keyword is a reference to the object being created
-  }
+    //=============================================================================================================================================================================//
+    //Constructors (A special method)
+        //> a constructor is a special method used to instantiate object instance variables
+        //> a constructor has the same name as the class
+        //> constructors have no return type
+        //> if a constructor is not a defined there is a default constructor for the class
+        //> constructors are often overloaded 
+        //> a 0 parameter/arguments constructor initializes default values
+        //> a constructor is called when an object of a class is created. 
+        //> What is the purpose of a constructor? Answer: constructors initialize instance variables
+    
+    // 0 parameters/arguments constructor
+    public Objects(){//This is the no argument or no parameter constructor for the class
+    //use the no args constructor to set default values for instance variables and call any default methods.
+        int num = 0;
+        boolean bool = false;
+        double duo = 3.14158;
+        String str = "Hello World";
+        String[] strArray = {"a","b","c","d","e"};
+        ArrayList<String> strList = new ArrayList<>(Arrays.asList("v","w","x","y","z"));
+    }
 
-  //Overloaded Constructor with 'this'
-  
-  public Objects(int num, boolean bool, double duo, String str, String[] strArray, ArrayList<String> strList){
-  //This constructor overloads the previous constructor, and allows you to specify values when instantiating an object
-      this.num = num;
-      this.bool = bool;
-      this.duo = duo;
-      this.str = str;
-      this.strArray = strArray;
-      this.strList = strList;
-      //The 'this' keyword is a reference to the object being created
-      //If you use the same variable names, there must be a way to distinguish between the attribute and the parameter
-  }
-	
-  // A constructor is a special method that is used to initialize objects.
-  // A constructor is called when an object of a class is created. 
-  // It can be used to set initial values for attributes
+    //Overloaded Constructor (A method/constructor is overloaded when there are multiple methods/constructors with the same name, but different signatures)
+    //The parameter list, lists the types of values that are passed and their variable names. (formal parameters)
+    public Objects(int n, boolean b, double d, String s, String[] sA, ArrayList<String> sL){
+    //This constructor overloads the previous constructor, and allows you to specify values when instantiating an object
+        int num = n;
+        boolean bool = b;
+        double duo = d;
+        String str = s;
+        String[] strArray = sA;
+        ArrayList<String> strList = sL;
+        /
+    }
+    
+    //=============================================================================================================================================================================//
+    // 'this' keyword
+        //> 'this' is a reference to the object used to call the method
+        //> in the context of a constructor 'this' refers to the object being created.
+        //> 'this' is not necessary to use in most cases, however if you have parameters with the same name as the instance variables it is required
+        //> using 'this' is a good idea to make code more clear, and easy to understand.
 
-  //=============================================================================================================================================================================//
-  //Non Static Class Methods (Methods that require an object)
-  //non static indicates that the method may change depending on the object
 
-  //Void Methods (no return)
+    //Overloaded Constructor with 'this'
 
-  public void nonStaticVoidMethod(){ 
-      //requires an object, does not return
-      System.out.print(num + "\n" + bool + "\n" +  duo + "\n" + str + "\n" +  strArray + "\n" +  strList);
-  }
+    public Objects(int num, boolean bool, double duo, String str, String[] strArray, ArrayList<String> strList){
+    //This constructor overloads the previous constructor, and allows you to specify values when instantiating an object
+        this.num = num;
+        this.bool = bool;
+        this.duo = duo;
+        this.str = str;
+        this.strArray = strArray;
+        this.strList = strList;
+        //The 'this' keyword is a reference to the object being created
+        //If you use the same variable names, there must be a way to distinguish between the attribute and the parameter
+    }
 
-  public void nonStaticVoidMethodWithParameters(int num, String str){
-      //requires an object, does not return, accepts arguments
-      this.num = num;
-      this.str = str;
-      System.out.println(this.num);
-      System.out.println(this.str);
-  }
+    //Method with 'this'
 
-  //Return Methods (have return type)
-  public String nonStaticMethodWithReturn(){
-      //requires an object, returns String type
-      return(str);
-  }
+    public void printInstanceVariables(){
+        instanceVars = [this.num, this.bool, this.duo, this.str];
+        for(int i = 0;i < instanceVars.length; i++ ){
+            System.out.println(instanceVars[i]);
+        }
+    }
 
-  public int nonStaticMethodWithReturnAndParameters(int x, int y){
-      //requires and object, returns integer type, accepts arguments
-      return(num + x + y);
-  }
+    //============================================================================================================================================================================//
+    //Static vs Non Static Methods
+        //> 'static' can be defined as unchanging
+        //> In this context static indicates that the method is the same for all instances of the class
+        
 
-  //=============================================================================================================================================================================//
-  //Static Class Methods (Methods that are shared across the class, ie do not require and object)
-  // static indicates that the method does not change
+    //Static Method
+    public static void staticMethod(){
+        return;
+    }
+    //> static methods do not require an object to call
+    //> static methods are called with the class name in other classes
 
-  //Void Methods (no return)
-  
-  public static void staticVoidMethod(){
-      staticNum++;
-  }
 
-  public static void staticVoidMethodWithParameters(String front, String back){
-      System.out.println(front + back);
+    //Non Static Method
+    public void nonStaticMethod(){
+        return;
+    }
+    //> non static methods require an object
+    //> non static methods have access to an object's instance variables 
+    
+    //=============================================================================================================================================================================//
+    public static void main(String[] args){
+        //=============================================================================================================================================================================//
+        // Object Instantiation
+            //> Every class implicitly inherits from the 'Object' class
+            //> type reference = new Constructor();
+            //> the name of the class you are creating an instance of is the type. 
+            //> default object value is null
 
-  }
+        //Declare an reference variable name
+        Object myObject; // value is null
 
-  //Return Methods (have return type)
-  public static ArrayList<String> staticMethodWithReturn(){
-      return(staticStrList);
-  }
+        //Declare a reference variable name and Instantiate an object
+            //> Objects is the reference variable type
+            //> obj is the reference variable that points to the location in memory of the object
+            //> 'new' serves as an operator that allocates memory and initializes an object of the specified class
+            //> Objects() is the constructor of the object
+        Objects obj = new Objects();
 
-  public static String staticMethodWithReturnAndParameters(String word){
-      return(word);
+        //Zero parameter/argument constructor
+        Objects defaultObj = new Objects();//No args constructor
+        
+        //Constructor with parameters/arguments
+        //Values passed to a method/constructor are actual parameters (arguments), and must occur in the same order and type as the signature. 
+        Objects valuesProvidedObj = new Objects( 5 ,true, 2.54, "Constructor", new String[]{"con","str","uct","or"},new ArrayList<>(Arrays.asList("ro","tcu","rts","noc"))); 
+        
 
-  }
+        //=============================================================================================================================================================================//
+        //Accessing Instance Variables and Static Fields
+            //> There are multiple ways to access Class Fields each with different times they can be used
 
-  //=============================================================================================================================================================================//
-  //main method
+        //> Accessing Instance Variables
+        defaultObj.num;
+        defaultObj.bool;
+        defaultObj.duo;
+        defaultObj.str;
+        defaultObj.strArray; //prints memory location
+        defaultObj.strList;
+        //> accesses the values for defaultObj
+        
+        valuesProvidedObj.num;
+        valuesProvidedObj.bool;
+        valuesProvidedObj.duo;
+        valuesProvidedObj.str;
+        valuesProvidedObj.strArray; //prints memory location
+        valuesProvidedObj.strList;
+        //> accesses the values for valuesProvidedObj
+        
 
-  public static void main(String[] args){
-      //Instantiation
+        
+        //> Accessing static attributes
+        staticNum;
+        staticBool;
+        staticDuo;
+        staticStr;
+        staticStrArray; //prints memory location
+        staticStrList;
+        //> This access method only works in the class the fields were declared
 
-      //type reference = new Constructor();
+        //> OR
+        obj.staticNum;
+        obj.staticBool;
+        obj.staticDuo;
+        obj.staticStr;
+        obj.staticStrArray; //prints memory location
+        obj.staticStrList;
+        //> This access method works only were the object has been instantiated and has access to the field
 
-      Objects obj = new Objects();
+        //> OR
+        Objects.staticNum;
+        Objects.staticBool;
+        Objects.staticDuo;
+        Objects.staticStr;
+        Objects.staticStrArray; //prints memory location
+        Objects.staticStrList;
+        //> This access method works anywhere that the class can be accessed. 
 
-      Objects defaultObj = new Objects();//No args constructor
-      //constructor with args
-      Objects valuesProvidedObj = new Objects( 5 ,true, 2.54, "Constructor", new String[]{"con","str","uct","or"},new ArrayList<>(Arrays.asList("ro","tcu","rts","noc"))); 
-      
-      //accessing static attributes
-      staticNum;
-      staticBool;
-      staticDuo;
-      staticStr;
-      staticStrArray; //prints memory location
-      staticStrList;
-      //OR
-      obj.staticNum;
-      obj.staticBool;
-      obj.staticDuo;
-      obj.staticStr;
-      obj.staticStrArray; //prints memory location
-      obj.staticStrList;
-      //OR
-      Objects.staticNum;
-      Objects.staticBool;
-      Objects.staticDuo;
-      Objects.staticStr;
-      Objects.staticStrArray; //prints memory location
-      Objects.staticStrList;
+        //=============================================================================================================================================================================//
+        // Accessing Methods
+            //> Methods are accessed in a similiar way to fields
+        
+        //> Calling Non Static Methods
+        defaultObj.nonStaticVoidMethod();
+        defaultObj.nonStaticVoidMethodWithParameters(1,"default");
+        defaultObj.nonStaticMethodWithReturn();
+        defaultObj.nonStaticMethodWithReturnAndParameters(1,3);
+        
+        valuesProvidedObj.nonStaticVoidMethod();
+        valuesProvidedObj.nonStaticVoidMethodWithParameters(2,"valuesProvided");
+        valuesProvidedObj.nonStaticMethodWithReturn();
+        valuesProvidedObj.nonStaticMethodWithReturnAndParameters(1,3);
 
-      
-      //Accessing object attributes
-      defaultObj.num;
-      defaultObj.bool;
-      defaultObj.duo;
-      defaultObj.str;
-      defaultObj.strArray; //prints memory location
-      defaultObj.strList;
-      
-      valuesProvidedObj.num;
-      valuesProvidedObj.bool;
-      valuesProvidedObj.duo;
-      valuesProvidedObj.str;
-      valuesProvidedObj.strArray; //prints memory location
-      valuesProvidedObj.strList;
-      
-      
-      //Calling Non Static Methods
-      defaultObj.nonStaticVoidMethod();
-      defaultObj.nonStaticVoidMethodWithParameters(1,"default");
-      defaultObj.nonStaticMethodWithReturn();
-      defaultObj.nonStaticMethodWithReturnAndParameters(1,3);
-      
-      valuesProvidedObj.nonStaticVoidMethod();
-      valuesProvidedObj.nonStaticVoidMethodWithParameters(2,"valuesProvided");
-      valuesProvidedObj.nonStaticMethodWithReturn();
-      valuesProvidedObj.nonStaticMethodWithReturnAndParameters(1,3);
-      
-      //Calling Static Methods
-      //in the same class
-      staticVoidMethod();
-      staticVoidMethodWithParameters("Java", "Programming");
-      staticMethodWithReturn();
-      staticMethodWithReturnAndParameters("static and return");
-      
-      //in another class
-      Objects.staticVoidMethod();
-      Objects.staticVoidMethodWithParameters("Java", "Programming");
-      Objects.staticMethodWithReturn();
-      Objects.staticMethodWithReturnAndParameters("static and return");
-      
-  }
+        
+        //> Calling Static Methods
+
+        //in the same class
+        staticVoidMethod();
+        staticVoidMethodWithParameters("Java", "Programming");
+        staticMethodWithReturn();
+        staticMethodWithReturnAndParameters("static and return");
+        //> This access method only works in the class the methods were defined
+
+        //Using an object (BAD PRACTICE)
+        obj.staticVoidMethod();
+        obj.staticVoidMethodWithParameters("Java", "Programming");
+        obj.staticMethodWithReturn();
+        obj.staticMethodWithReturnAndParameters("static and return");
+        
+        //in another class
+        Objects.staticVoidMethod();
+        Objects.staticVoidMethodWithParameters("Java", "Programming");
+        Objects.staticMethodWithReturn();
+        Objects.staticMethodWithReturnAndParameters("static and return");
+        //> This access method works anywhere that the class can be accessed. 
+        
+    }
 }
+
+/*
+Common Errors:
+  NullPointerExceptions
+  Accessing non static in a static way
+
+
+*/
+
+/*
+Practice:
+
+*/
