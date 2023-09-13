@@ -9,48 +9,55 @@ You should not choose class, object, method, or variable names the way this file
 
 /**
 Notes:
-A literal is the source code representation of a fixed value.
-  (an actual value, does not represent something else.)
-
-A type is a set of values(a domain) and a set of operations on them. 
-
-Data Types are divided into two groups
-  Primitive data
-  Non-Primitive data (reference)
-
-  Primitive data types in Java
-    > primitive types are predefined by Java
-    > they always have a value
-    > named with a lower case letter (use camelCase)
-    > size of primitive types depend on the data
-
-  Non-Primitive(reference) data types in Java
-    > are created by a programmer and are not defined by Java (except for String)
-    > can be used to call methods to perform certain operations
-    > can be null (this will be important later!)
-    > start with an uppercase letter (except Strings and Arrays --> use camelCase)
-    > all have the same size
-
+Covered in this file:
+	//> Literals
+	//> Data Types
+	//> Primitive Data Types
+	//> Reference Data Types (Non-Primitives)
+	//> Changing Data Type (Casting)
+	//> Wrapper Classes for Primitive Types
 */
-
+import java.util.ArrayList; import java.util.HashMap;
 class DataTypes{
   public static void main(String[] args){
     //ignore this above for now, but make sure it is in every program you write or they will not work.
-    //Don't worry we will come back to this later.
+    //see Methods.java for an explanation of the 'main' method
+    
+  //============================================================================================================================================================================//
+  // Literals
+    //> A literal is the source code representation of a fixed value.
+    //> (an actual value, does not represent something else.)
+    
+  //============================================================================================================================================================================//
+  // Types
+    //> A type is a set of values(a domain) and a set of operations on them. 
+    //> A class in java is a type
+    //> objects are instances of a class type
+      
 
-
-    //Primitive data types in Java------------------------------------------------------------------------------------------------------------------
-  
+    // Data Types are divided into two groups
+      //> Primitive Types
+      //> Reference Types (Non Primitive)
+    
+  //============================================================================================================================================================================//
+  // Primitive data types in Java
+  	//> primitive types are predefined by Java
+  	//> they always have a value
+  	//> named with a lower case letter
+  	//> size of primitive types depend on the data
+    
     //Types that store numbers are split into two groups
-      //Integer types and Floating point types
+      //> Integer types 
+      //> Floating point types
 
-    //Integer types----------------------------------------------
-
+    
+    // Integer Types //
+    
     //byte : size 1 byte : Stores whole numbers from -128 to 127
     byte byteLow = -128;
     byte byteHigh = 127;
 
-    //short : size 2 bytes :	Stores whole numbers from -32,768 to 32,767
+    //short : size 2 bytes :  Stores whole numbers from -32,768 to 32,767
     short shortLow = -32768;
     short shortHigh = 32767;
 
@@ -58,16 +65,13 @@ class DataTypes{
     int intLow = -2147483648;
     int intHigh = 2147483647;
 
-    
-
     //long : size 8 bytes : Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
     long longLow = -9223372036854775808L;
     long longHigh= 9223372036854775807L;
     // ! remember that long values end with an "L"
-
-    //----------------------------------------------------------
-    //Floating point types--------------------------------------
-
+    
+    // Float Point Types //
+    
     //float : size 4 bytes : Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
     float floatValue = 3.141592f;//what special number am I?
     // ! remember the precision of a float is only 6 or 7 decimal digits
@@ -80,12 +84,12 @@ class DataTypes{
 
     //Scientific numbers can be indicated using an E to indicate power of 10.
     double scientificNumber = 6.022E23d;//what special number am I?
-
-    //----------------------------------------------------------
-    //Other types-----------------------------------------------
-
-    //boolean : size 1 bit : Stores true (1) or false (0) values
+    
+    
+    //Other primitive types //
+    
     // Booleans are variables with only two possible values.
+    // boolean : size 1 bit : Stores true (1) or false (0) values
     boolean boolZero = false;
     boolean boolOne = true; 
 
@@ -96,41 +100,87 @@ class DataTypes{
     // 0 = 48
     // A = 65
     // a = 97
+   
+  //============================================================================================================================================================================//
+  // Reference data types in Java (Non-primitives)
+  	//> can be used to call methods to perform certain operations
+  	//> default to 'null' (this will be important later!)
+    //> These are Classes, Interfaces, Enums, etc. in java
+    //> Objects are an instance of a class. 
+    
+    // Common Reference Types in Java
+      //> Strings
+      //> Arrays
+      //> Multi Dimensional Arrays
+      //> ArrayLists
+      //> HashMap 
+      //> Any custom class
+    
+    //strings : syntax String identifier = "<text>";
+    String str = "This is a string.";
 
-    //---------------------------------------------------------
-
-
-    /*
-    Casting
-      > converts one primitive type to another type is 
-      > widening casting: converting  a smaller type to a larger type
-      > narrowing casting: converting a larger type to a smaller type
-    */
-
-    //widening casting is automatic
+    //arrays : syntax type[] identifier = new type[<size>]; or type[] identifier = {0,1,2,3.....};
+    int[] array = new int[5];//create a new empty array of length 5.
+    int[] initArray = {0,1,2,3,4,5};
+    
+    //Multidimensional Arrays
+    //2d arrays : syntax type[][] identifier = new type[<size>][<size>] or type[] identifier = {{0,1,2,3.....},{0,1,2,3.....}};
+    int[][] array2d = new int[5][5];
+    int[][] initArray2d = {{1,2,3,4,5},{6,7,8,9,0}};
+    
+    //ArrayLists : syntax ArrayList<type> identifier = new ArrayList<>();
+      //> must import java.util.ArrayList
+      //> can only store objects (no primitives) see Wrapper Classes for primitives
+    ArrayList<Integer> list = new ArrayList<>();
+    
+    //HashMap : syntax HashMap<keyType, valueType> identifier = new HashMap<>();
+      //> must import java.util.HashMap
+      //> can only store objects (no primitives) see Wrapper Classes for primitives
+      //> AKA dictionaries in other languages
+    HashMap<String, String> map = new HashMap<>();
+    
+    
+  //============================================================================================================================================================================//
+  // Changing Data Type (Casting)
+    //> casting is used to change type of data
+    //> Implicit (widening) casting occurs automatically 
+    //> Explicit (narrowing) casting must be done manually 
+    //> Upcasting is implicit casting from a subclass to a parent class
+    //> Downcasting is explicit casting from a parent class to a subclass
+    
+    
+    //widening casting
     int anInteger = 9;
-    double aDouble = anInteger;
-    //the int was automatically cast to a double
+    double aDouble = anInteger; //> 9.0
+    // automatically cast to a double
+    
+   
+    // narrowing casting : syntax (newType) data
+    double aDoubleToo = 1.618033988749d; //>what special number am I?
+    int anIntegerToo = (int) aDoubleToo;//> outputs 1 ... but why?
 
-    //narrowing casting must be done manually
-    double aDoubleToo = 1.618033988749d; //what special number am I?
-    int anIntegerToo = (int) aDoubleToo;// outputs 1 ... but why?
-
-    /*
-    "rounding"
-    When casting a floating point type to an integer type computers do not round.
-    They simply cut off the number at the decimal.
-    This is called truncating.
-    */
-
-    //example
-    double floatingPoint = 3.5d; //what will this become when cast to an integer?
-    int integerType = (int) floatingPoint;
-    System.out.println(integerType);
-
-
-
-    //Wrapper Classes for Primitive Types--------------------------------------------------------------------------------------------------------
+    //> Truncating
+      //> When narrowing casting a double value it is truncated, not rounded.
+      //> for example 3.14 becomes 3 and 1.61 becomes 1 
+      //> the values after the floating point are simply removed
+    
+    //Upcasting 
+      //> All java classes are implicit subclasses of the Object class
+      //> Here a DataTypes object is upcast to and Object reference
+    Object parent = new DataTypes();
+    
+    //Downcasting 
+      //> All java classes are implicit subclasses of the Object class
+      //> Here the parent object we created is downcast to the subclass DataTypes
+    DataTypes child = (DataTypes) parent;
+    
+  //============================================================================================================================================================================//
+  //Wrapper Classes
+    //> primitive data types have limitations
+    //> sometimes we need a way to interact with primitives like objects
+    //> wrapper classes allow use to reference primitive data in an object
+    
+    //Wrapper classes in Java
     Integer intWrapper;
     Double duoWrapper;
     Boolean boolWrapper;
@@ -140,74 +190,18 @@ class DataTypes{
     Long longWrapper;
     Float floatWrapper;
     Character charWrapper;
-
-
-    //-------------------------------------------------------------------------------------------------------------------------------------------
-    //Non-Primitive data types-------------------------------------------------------------------------------------------------------------------
     
-    //strings : syntax String identifier = "<text>";
-    String aString = "This is a string.";
-
-    //arrays : syntax type[] identifier = new type[<size>]; or type[] identifier = {0,1,2,3.....};
-    int[] declareSize = new int[5];//create a new empty array of length 5.
-
-    //Array Initializers
-    //This is a shorthand that combines declaration, creation, and initialization of an array. 
-    //syntax
-      // elementType[] identifier = {value1,value2,...};
-    int[] intArray = {1,2,3,4,5};//what is the length of this array?
+    //Boxing (explicit casting to wrapper class)
+    Integer box = Integer.valueOf(10);
     
-    String[] stringArray = {"Index 0", "Index 1", "Index 2"};//what is the length of this array?
-
-    //to print an array you must access the index of the value
-    //arrays start at index 0 and increase from there
-    System.out.println(intArray[4]); //why does this print out 5?
-    System.out.println(stringArray[0]);
-
-    //to change the value in an array access the value's index. syntax arrayIdentifier[<index>] = <new value>;
-    intArray[0] = 5; 
+    //Autoboxing (implicit casting to a wrapper class)
+    Integer object = 10; 
     
-    // Once created the size of an array is fixed.
-    //! remember the length of an array cannot be changed without making a new array
-
-    //to check the length of an array use .length : syntax arrayIdentifier.length
-    System.out.println("The length of intArray is " + intArray.length);
-    System.out.println("The length of stringArray is " + stringArray.length);
-
-    /*
-    More Array Notes:
-    Unlike declarations for primitive data type variables, the declaration of an array variable does not allocate any space in memory for the array.
-    It creates a storage location for the reference to an array. 
-    If a variable does not contain a reference to an array, the value of the variable is "null" (meaning nothing).
-
-    Array variables only hold a reference to the actual array, but this can usually be ignored. 
-      So for simplicity we can say that the Array variable is an "array".
-
-    Arrays are typically processed using for loops.
-
-    Context that will make sense later
-      > Strings and Arrays are both Objects in java
-      > length is an instance variable that returns the length of an array
-      > the length variable is only used for arrays 
-
+    //Unboxing (explict casting to primitive data)
+    int primitive = object.intValue();
     
-    */
-
-    //Multi Dimensional arrays
-    //2D arrays : syntax type[] identifier = new type[<size>][<size>]; or type[] identifier = {{0,1,2,3.....},{0,1,2,3.....}};
-    int[][] multiArray = {{1,2,3,4,5},{6,7,8,9,0}};
-    System.out.println(multiArray[1][4]);//this selects array index 1 and the 4th index to print the number 0
-    //much more on 2d arrays later.
-
-    /* 
-    Some Non-Primitive data types are not covered here because they are very complex and 
-    require thier own lessons.
-    > Classes, Methods, Objects, Interfaces, ... etc.
-    */
-
-    
-
-
+    //Auto unboxing (implicit casting to primitive data)
+    int unbox = object;
 
 
   }
@@ -215,7 +209,7 @@ class DataTypes{
 
 /*
 Common Errors:
-  chars use single quotes '' not doublee quotes
+  chars use single quotes '' not double quotes
   Integer Overflow Error
 
 

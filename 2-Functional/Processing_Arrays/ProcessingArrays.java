@@ -13,7 +13,7 @@ the way this file does.
 
 /**
 Notes:
-Processing arrays is an import skill that will be used quite often
+Processing arrays is an important skill that will be used quite often
 
 Arrays are objects in Java. The JVM Stores the objects in an area of memory called the heap, which is used for dynamic memory allocation.
 

@@ -11,7 +11,7 @@ You should not choose class, object, method, or variable names the way this file
 Notes:
   Covered in this file:
   //> Boolean Expressions
-  //> De Morgans Laws
+  //> De Morgan's Laws
   //> Conditional Syntax
   //> Chained Conditionals
   //> Nested Conditionals

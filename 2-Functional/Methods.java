@@ -25,7 +25,7 @@ Notes:
     Methods enable code sharing an reuse.
     They are also used to modularize code or break it up into parts that are easier to work with. 
     Methods employ procedural abstraction allowing a programmer to use the method by knowing what the method does even if they do not know how the method is implemented. 
-    We declare and intialize variables, but define and call methods
+    We declare and initialize variables, but define and call methods
     > declaring usually involves the allocation of memory.
 
     //> Code is executed from the beginning(top) to the end (bottom) and left to right.
@@ -136,13 +136,13 @@ Method Syntax
     }
 
 //============================================================================================================================================================================//
-// Formal vs. Actual Paramaters (parameters vs. arguments)
+// Formal vs. Actual Parameters (parameters vs. arguments)
     //> Formal parameters (parameters) appear  in the method header
     //> Actual parameters (arguments) appear when the method is called 
     //> Formal parameters declare the type and name of a variable
-    //> Actural parameters (arguments) provide the actual values of the formal parameters
+    //> Actual parameters (arguments) provide the actual values of the formal parameters
     //> Parameters are passed using call by value. The formal parameters are intialized with copies of the actual parameters.
-    //> Formal/Actual parameters are seperated with a comma
+    //> Formal/Actual parameters are separated with a comma
     //> Formal/Actual parameters must appear in the same order
     //> There can be as few or as many parameters as needed
     //> parameters have a local scope meaning they only exist inside the method definition

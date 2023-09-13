@@ -56,8 +56,8 @@ public class Objects {//Created the 'Objects' class
     //============================================================================================================================================================================//
     //Keyword Modifiers(final, static, etc.)
     //>See Modifiers for more on final and static
-    final var5;
-    static var6;
+    final int var5; // should be private static final int var5 = 0;
+    static int var6;
 
     //============================================================================================================================================================================//
     //Instance Variables, Attributes, Fields, and Properties

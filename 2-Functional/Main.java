@@ -4,7 +4,7 @@
 //single line comment
 
 /* 
-Multi
+Multi-
     Line
         comment
 comments allow programmers to make notes about their code. 
@@ -20,6 +20,10 @@ It is good practice to make comments in your code so that you and others can und
 
 /** 
 Notes:
+Covered in this file:
+//> Intro to Java
+//> First Program
+
 Java is a class based, object-oriented programming language
     Developed by Sun Microsystems in 1995.
     It is intended to be write once run anywhere(WORA). 
@@ -63,7 +67,7 @@ Common Errors:
     Common errors to think about:
         Missing braces {}
         Missing semicolon ;
-        Mising quotation mark ""
+        Missing quotation mark ""
         Misspelling names
          
 

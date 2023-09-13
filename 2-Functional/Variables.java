@@ -9,99 +9,183 @@ You should not choose class, object, method, or variable names the way this file
 
 /**
 Notes:
-  Variables: are the identifiers given to locations in memory that are used to store data. 
-    in other words, names for values that can change.
+  Covered in this file:
+  //> What are Literals?
+  //> What are Variables?
+  //> Variable Naming Rules
+  //> Declaring and Initializing Variables
+  //> Using Variables in Operations
+  //> Parameters
+  //> Instance Variables and Modifiers
+  //> Final Variables
+  //> Static Variables
+  //> Variable Scope
+  
 
-  The memory that assiciated with a variable holds the literal value of primitive data. 
+  
 
-  Follow these naming rules for creating identifiers for variables, methods, and objects.
-    General Naming rules:
-      > may contain letters, digits, underscores and dollar signs
-      > must begin with a letter
-      > start with lowercase and no whitespace (camelcase)
-      > can begin with $ and _ 
-      > names are case sensitive 
-      > reserved words cannot be used as names. 
+   
 */
 
 class Variables {
+//============================================================================================================================================================================//
+//What are literals?
+  //> A literal is the source code representation of a fixed value.
+  //> (an actual value, does not represent something else.)
+ 
+//============================================================================================================================================================================//
+// What are Variables?
+  //> variables are identifiers given to locations in memory that are used to store data. 
+  //> a name that has a value that can change (vary)
+  //> The memory that associated with a variable holds the literal value of primitive data. 
+  //> Variables that hold the same string value reference the same location in memory (called interning)
+  //> Variables have default values when declared, but no initialized.
 
-  static void variableScope (){//A code block is all of the code between curly braces.
-    //code before the variable cannot access it.
-    String scope = "Code after this point can access the variable scope.";
-    //code after the variable can access it.
-    System.out.println(scope);
-    //code outside of the curly braces cannot access variables defined inside of the braces.
-  }
-  //variables declared inside of a block(method, loop, etc.) have local scope.
-  //variables accessible throughout the program have global scope.
-
+//============================================================================================================================================================================//
+// Variable Naming Rules
+/*
+  Follow these naming rules for creating identifiers for variables, methods, and objects.
+  General Naming rules:
+    > must begin with a letter
+    > may contain letters, digits, underscores and dollar signs
+    > start with lower case and no whitespace (camelCase)
+    > can begin with $ and _ 
+    > names are case sensitive 
+    > reserved words cannot be used as names.
+    > Use descriptive names to make your code easier to read and maintain
+    > Short names are easier to type, but not easy to read
+*/
+ 
   public static void main(String[] args){
-  //ignore this above for now, but make sure it is in every program you write or they will not work.
-  //Don't worry we will come back to this later.
-
-
-    //syntax for declaring variable --> type identifier = value ;
-    int variable; //This is declaring the variable
-    variable = 0; //This is initializing the variable
-
-    //you can do both at the same time;
-    int newVariable = 0; 
-
-    //Strings: for words and sentences
-    String someText = "Your text here.";
-
-    // Integers: for whole numbers
-    int someNumber = 5;
-
-    // Booleans: for true and false values
-    boolean someBool = true;
-
-
-    // Identifiers are unique names that identify variables. 
-    // Use descriptive names to make your code easier to read and maintain
-    String firstName = "John";//this is easier to read. 
-    //or
-    String k = "John";// this can be confusing in large code files
+    //ignore this above for now, but make sure it is in every program you write or they will not work.
+    //see Methods.java for an explanation of the 'main' method
+   
+  //============================================================================================================================================================================//
+    //Declaring and Initializing Variables
+      //> syntax : type identifier = literalValue;
+      //> alias are variables that represent the same value
+    
+    //declaring a variable
+    int num; //> 0
+    double duo; //> 0.0
+    boolean bool; //> false
+    String str; //> null
     
     
-    //print a variable to the console with System.out.print(<identifier>);
-    System.out.println(someText);
-    System.out.println(someNumber);
-    System.out.println(someBool);
-
-    //you can assign a new value to a variable without redeclaring a variable. 
-    someText = "Some new text.";
-    someNumber = 2;
-    someBool = false;
-
-    //use final to prevent a variable from being overwritten
-    final String finalWord = "cannot change me."; 
-    //finalWord ="Trying to change the finalWord variable generates an error."
-
-    //Declare multiple variables of the same type with a comma seperated list:
-    int a = 1, b =2, c = 3;
+    //declaring and initializing a variable
+    int initNum = 0;
+    double initDuo = 0.0;
+    boolean initBool = false;
+    String initStr = null;
+    
+    //Declare multiple variables of the same type with a comma separated list:
+    int a = 1, b = 2, c = 3;
     
     //or one value to multiple variables
     a = b = c = 100;
-
-    //concatenate text and variables with the + operator
-    String concatMe = "To concatenate means ";
-    String concatenated = concatMe + "to link together in a chain or series.";
-    System.out.println(concatenated);
-
-    //or concatenate two variables 
-    String concat1 = "Put two ";
-    String concat2 = "and two together!";
-    String concat3 = concat1 + concat2;
-    System.out.println(concat3);
-
-    //the concat() method can be used, but only for strings
-    String string1 = "concat";
-    String string2 = "enated";
-    concatenated =  string1.concat(string2);
-    System.out.println(concateneated);
+    
+    //aliases
+    int num1 = num;
+    int num2 = num1;
+    int num3 = num2;
+    // num, num1, num2, num3 are all aliases
+    
+    
+  //============================================================================================================================================================================//
+    //Using Variables in Operations
+      //> variables can be used in operations in place of literals
+    int x = 2;
+    int y = 5;
+    
+    String front = "Hello ";
+    String back = "World";
+    
+    System.out.println(x + y);
+    System.out.println(x * y);
+    System.out.println(x - y);
+    System.out.println(x / y);
+    System.out.println(x % y);
+    
+    System.out.println(front + back);  
   }
+  
+//============================================================================================================================================================================//
+  //Formal Parameters
+    //> Formal Parameters appear in the method header
+    //> These are special variables for passing values to a method
+    //> These variables have a local scope to the method (they do not exist outside the method definition)
+
+//{----IGNORE THIS FOR NOW----}{-----------------FOCUS HERE------------------}
+  public static void methodName(int num, double duo, boolean bool, String str) {
+    return;                     //In the parenthesis of a method header formal parameters(variables) are declared
+  }                             //These variable only exist between the {} of the method
+                                //When the method is called actual parameters(arguments) aka values are used to initialize the formal parameters. 
+
+//============================================================================================================================================================================//
+  //Instance Variables and Modifiers
+    //> instance variables are associated with objects of a class
+    //> instance variables are declared in the class definition, and initialized in a special method called a constructor
+    //> modifiers determine the accessibility of these variable outside of the declared class
+      //> default : accessible in the same package
+      //> public  : accessible anywhere
+      //> private : only accessible in the declared class
+      //> protected : accessible in the same package
+    
+    //examples
+    int num;
+    public int num1;
+    private int num2;
+    protected int num3;
+    
+    double duo;
+    boolean bool;
+    String str;
+    
+//============================================================================================================================================================================//
+  // Final Variables
+    //> the final keyword prevents a variable's value from being changed
+    //> often used for constants
+    
+    final double pi = 3.14159;
+
+//============================================================================================================================================================================//
+  //Static Variables
+    //> static means unchanging
+    //> static variables belong to the class they are declared in.
+    //> static variables are the same for all instances of a class.
+    //> typically declared and initialized in the class definition.
+    
+    static int unchanging = 10;
+    
+//============================================================================================================================================================================//
+  //Variable Scope 
+    //> variables have scope (what part of the program they can be accessed from)
+    //> variables can only be accessed after they have been declared. 
+    //> variables declared in the class definition (fields) are accessible from the entire class
+    //> variables declared in a method are accessible in that method only
+    //> variable declared inside of a loop, or conditional are accessible in loop/conditional block only
+    
+    
+  //example
+    //> A code block is all of the code between curly braces.
+    //> code before the variable cannot access it.
+    //> code after the variable can access it.
+    //> code outside of the curly braces cannot access variables defined inside of the braces.
+    //word scope =============================================================//
+    String word;                                                              //
+                                                                              //
+    public static void method(int number) {// number scope~~~~~~~~~~//        //
+                                                                    //        //
+      for(int spot = 0; spot < 5; spot ++) {// spot scope -----//   //        // 
+          continue;                                            //   //        //
+                                                               //   //        //
+      }// spot scope ------------------------------------------//   //        //
+                                                                    //        //
+    }// number scope~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//        //
+                                                                              //
+   //word scope ==============================================================//
+    
+ 
 }
 
 /*
