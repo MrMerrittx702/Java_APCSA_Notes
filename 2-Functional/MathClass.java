@@ -70,10 +70,10 @@ class MathClass {
     int max = 100, min = 50;
 
     //(int)((Math.random() * ((max-min) + 1)+min)); //this is the correct method for random range with a --negative and a positive or two positives--
-    randomNum = (int)((Math.random() * ((max-min) + 1)+min));
+    randomNum = (int)((Math.random() * ((max-min) + 1) + min));
 
     max = 25; min = -25;
-    randomNum = (int)((Math.random() * ((max-min) + 1)+min));
+    randomNum = (int)((Math.random() * ((max-min) + 1) + min));
 
 
     //(int)((Math.random() * (max-min)+min)); //this is the correct method for random range with --two negatives--

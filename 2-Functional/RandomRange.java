@@ -27,13 +27,13 @@ class RandomRange {
     if ((max < 0) && (min < 0)){
       System.out.println("Two negatives");
       for (int i = 0; i<array.length; i ++){
-        System.out.print((int)((array[i]) * (max-min)+min) + ", ");
+        System.out.print((int)((array[i]) * (max-min) + min) + ", ");
       } 
 
     } else {
       System.out.println("Two positive or One positive, One Negative");
       for (int i = 0; i<array.length; i ++){
-        System.out.print((int)((array[i]) * ((max-min)+1)+min) + ", ");
+        System.out.print((int)((array[i]) * ((max-min)+1) + min) + ", ");
       }
     }
   }

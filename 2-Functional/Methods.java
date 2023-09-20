@@ -206,14 +206,13 @@ Method Syntax
         if (this == obj) {
         return true;
         }
-        if (obj instanceof Method) {
-            String anotherString = (Method)obj;
-            if(this.toString().equals(obj.toString())){
-                return true;
-            }
+        
+        obj = (Methods) obj;
+        if(this.toString().equals(obj.toString())) {
+          return true;
         }
         return false;
-            
+        
     }
 
     //overriden from Object.toString()
@@ -227,7 +226,7 @@ Method Syntax
     //> must have a halting condition to prevent infinite recursion
     //> see Recursion folder for more
 
-    public static int recusiveMethod(int n){
+    public static int recursiveMethod(int n){
         if(n >= 1){//> halting condition
             System.out.println(n); //>to help visualize what is happening
             return 1;
@@ -247,9 +246,10 @@ Method Syntax
     //> a 0 parameter/arguments constructor initializes default values
     //> a constructor is called when an object of a class is created. 
     //> What is the purpose of a constructor? Answer: constructors initialize instance variables
+    private int num; private double duo; private boolean bool; private String str;
     
     // 0 parameters/arguments constructor
-    public Method(){
+    public Methods(){
         this.num = 1;
         this.duo = 3.14;
         this.bool = true;
@@ -257,7 +257,7 @@ Method Syntax
     }
 
     //Overloaded
-    public Method(int num, double duo, boolean bool, String str){
+    public Methods(int num, double duo, boolean bool, String str){
         this.num = num;
         this.duo = duo;
         this.bool = bool;
@@ -284,17 +284,17 @@ Method Syntax
             //> a method call interupts the sequential execution of a program, executing the method statements first, then returning to the point immediately following the method call. 
 
         //Instantiating objects to be used with Non Static Methods
-        Method myObject1 = new Method(); // calling the no parameter/args constructor
-        Method myObject2 = new Method(2, 2.17, false,"Goodbye World");// calling the constructor
+        Methods myObject1 = new Methods(); // calling the no parameter/args constructor
+        Methods myObject2 = new Methods(2, 2.17, false,"Goodbye World");// calling the constructor
 
 
         //Calling Static Methods
         staticMethod(); //> Only works when called in the same class it was created.
-        Method.statiMethod(); //> Class.staticMethodName() works in all classes that have access to the method.
+        Methods.staticMethod(); //> Class.staticMethodName() works in all classes that have access to the method.
         //> With Return
             //> the return value is returned to the point in the program where the method was called
         intReturnMethod();//> Returns the value 1 to this point in the program
-        Method.intReturnMethod(); //> Returns the value 1 to this point in the program
+        Methods.intReturnMethod(); //> Returns the value 1 to this point in the program
 
         //Calling Non Static Methods
         myObject1.nonStaticMethod(); 
@@ -309,17 +309,17 @@ Method Syntax
             //> Actual parameters(arguments) are values passed to the parameters created when defining the method.
             //> Actrual parameters(arguments) are pass by value to methods meaning we provide the value not a reference to it.
         methodWithParameters(5,false,1.68);
-        Method.methodWithParameters(5,false,1.68);
+        Methods.methodWithParameters(5,false,1.68);
         
         add(2,2); //> Static with Parameters only works in the class it was defined 
-        Method.add(2,2); //> Static with Parameters
+        Methods.add(2,2); //> Static with Parameters
 
         myObject1.equals(myObject2);//> Non Static with Parameter
 
 
         //Calling recursive method
         recursiveMethod(5);
-        Method.recursiveMethod(5);
+        Methods.recursiveMethod(5);
 
 
     }
@@ -346,4 +346,4 @@ Additional Notes:
     When the method finishes its work and returns to its caller, its activation record is removed from the call stack. 
     The call stack follows LIFO or last in first out
 
-/*
+*/

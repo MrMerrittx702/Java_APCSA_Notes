@@ -40,11 +40,13 @@ public class Strings {
     String str = "Hello World!";
     //> OR
     String str1 = new String("Goodby World!");
-
+    
+    String str2;
     //============================================================================================================================================================================//
     //String Methods
       //> strings are an object that contains methods to perform operations on strings
     String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+ 
     //============================================================================================================================================================================//
     // length()
       //> returns the number of characters in the string including space characters
@@ -191,7 +193,11 @@ public class Strings {
     } else {
         System.out.println(str1 + " is lexicographically equal to " + str2);
     }
-
+    
+    String a = "a"; //unicode 97
+    String b = "b"; //unicode 98
+    
+    System.out.println( a.compareTo(b) ); //> returns -1
 
     
   }
